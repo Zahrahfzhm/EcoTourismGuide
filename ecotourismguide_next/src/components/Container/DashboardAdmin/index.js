@@ -5,9 +5,9 @@ import Image from "next/image"
 export default function DashboardAdminContainer() {
     return (
         <div className="flex space-x-6 mt-4">
-            <div className="h-[802px] w-[868px] bg-[#B9F4E0] rounded-lg ">
-                <div className="flex flex-col justify-center max-w-[868px] ">
-                    <section className="flex flex-col px-6 pt-11 pb-5 w-full rounded-xl max-md:pl-5 max-md:max-w-full">
+            <div className="h-[802px] w-[868px] bg-[#B9F4E0] rounded-lg overflow-y-auto max-h-screen">
+                <div className="flex flex-col justify-center max-w-[868px]">
+                    <section className="flex flex-col px-6 pt-11 pb-5 w-full rounded-xl max-md:pl-5 max-md:max-w-full ">
                         <div className="flex gap-5 justify-between items-center px-px max-md:flex-wrap max-md:max-w-full">
                         <h1 className="self-stretch my-auto text-xl font-bold text-center text-black">Hi, ..... !</h1>
                         <div className="flex flex-col justify-center self-stretch my-auto whitespace-nowrap text-zinc-700 text-opacity-60">
@@ -39,7 +39,7 @@ export default function DashboardAdminContainer() {
                                         objectFit="cover"
                                         className="absolute inset-0"
                                     />
-                                    <div className="relative flex mt-40 justify-between space-x-10">
+                                    <div className="relative flex mt-40 justify-between space-x-11">
                                         <h3 className="text-base ">Nama Wisata <br /> Nama UMKM</h3>
                                         <div className="text-base flex items-center">
                                             <p>Lokasi</p>
@@ -58,7 +58,7 @@ export default function DashboardAdminContainer() {
                                         objectFit="cover"
                                         className="absolute inset-0"
                                     />
-                                    <div className="relative flex mt-40 justify-between space-x-14">
+                                    <div className="relative flex mt-40 justify-between space-x-11">
                                         <h3 className="text-base ">Nama Wisata <br /> Nama UMKM</h3>
                                         <div className="text-base flex items-center">
                                             <p>Lokasi</p>
@@ -77,7 +77,7 @@ export default function DashboardAdminContainer() {
                                         objectFit="cover"
                                         className="absolute inset-0"
                                     />
-                                    <div className="relative flex mt-40 justify-between space-x-14">
+                                    <div className="relative flex mt-40 justify-between space-x-11">
                                         <h3 className="text-base ">Nama Wisata <br /> Nama UMKM</h3>
                                         <div className="text-base flex items-center">
                                             <p>Lokasi</p>
@@ -88,9 +88,9 @@ export default function DashboardAdminContainer() {
                             </article>
                         </div>
                         </div>
-                        <div className="flex gap-5 items-start px-4 pt-2.5 pb-20 mt-4 bg-white rounded-xl max-md:flex-wrap max-md:max-w-full">
+                        <div className="flex gap-5 items-start px-4 pt-2.5 pb-20 mt-4 bg-white rounded-xl max-md:flex-wrap max-md:max-w-full h-[550px]">
                         <h2 className="flex-auto mt-3 text-xl font-bold text-center text-black">Statistik Wisata</h2>
-                        <div className="flex overflow-hidden relative flex-col justify-center aspect-[2.42] w-[87px]">
+                        <div className="flex overflow-hidden relative flex-col justify-center aspect-[2.42] w-[87px] ">
                             <Image
                             src="https://cdn.builder.io/api/v1/image/assets/TEMP/a9ad267811129c1e3b1768bd38bffd8181b4266bfda468d1e28feabfc3f2b611?apiKey=2b13a1e2364a4d3f8744de572dd64729&"
                             alt="Statistik Wisata"
@@ -104,7 +104,7 @@ export default function DashboardAdminContainer() {
                     </section>
                 </div>
             </div>
-            <div className="flex-col w-[257px]">
+            <div className="flex-col w-[257px] ">
                 <div className="h-[77px]  bg-[#B9F4E0] rounded-lg">
                     
                 </div>
