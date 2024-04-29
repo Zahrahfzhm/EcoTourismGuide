@@ -1,15 +1,17 @@
 "use client"
 
+import Image from 'next/image';
+
 import { Gear, HouseSimple, IdentificationBadge, SignOut, TrayArrowUp } from "@phosphor-icons/react";
 
 export default function Sidebar() {
     return (
         <div className="flex h-screen w-[240px]">
             <div className="bg-white-800 text-black flex flex-col items-center ">
-                <div className="p-8">
-                    <h1 className="text-xl font-bold max-w-[203px]">Eco Tourism Guide</h1>
+                <div className="p-3">
+                    <Image src="/logo_potrait.png" alt="Logo"  width={120} height={120}/>
                 </div>
-                <div className="mt-6 flex flex-col p-8 ">
+                <div className="mt-0 flex flex-col p-8 ">
                     <button className="text-left w-[208px] h-[60px] text-md bg-white hover:bg-[#1EC28B] hover:shadow-md hover:text-white shadow-md text-black px-7 py-2 rounded-lg transition-colors duration-300 ease-in-ou ">
                         <div className="flex items-center space-x-2">
                             <HouseSimple size={20} />
