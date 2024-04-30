@@ -1,30 +1,23 @@
 "use client"
 
-import { MagnifyingGlass } from "@phosphor-icons/react/dist/ssr";
+
 import Image from "next/image";
+import InputSearch from "@/components/Content/DashboardAdmin/InputSearch";
 
 export default function DashboardAdminContainer({ handleClick1, handleClick2, handleClick3, handleClick4, handleClick5, handleClick6, handleClick7 }) {
     const handleClick = () => {
-        // Tambahkan logika untuk event onClick di sini
+        
       };
     return (
-        <div className="flex space-x-6 mt-4">
+        <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 mt-4">
             <div className="h-[802px] w-[868px] bg-[#B9F4E0] rounded-lg overflow-y-auto max-h-screen">
                 <div className="flex flex-col justify-center max-w-[868px]">
                     <section className="flex flex-col px-6 pt-5 pb-5 w-full rounded-xl max-md:pl-5 max-md:max-w-full ">
                         <div className="flex justify-between items-center px-px max-md:flex-wrap max-md:max-w-full">
                         <h1 className="self-stretch my-auto text-xl font-bold text-center text-black">Hi, ..... !</h1>
                         <div className="flex flex-col justify-center self-stretch my-auto whitespace-nowrap text-zinc-700 text-opacity-60">
-                        <div className="flex gap-0 px-2 py-1 rounded-xl bg-zinc-50 bg-opacity-90">
-                            <div className="flex items-center">
-                                <div className="p-1.5 text-lg font-medium">
-                                    <MagnifyingGlass size={24} />
-                                </div>
-                                <input type="text" placeholder="Search..." className="outline-none bg-zinc-50 border-none text-lg" />
-                            </div>
+                            <InputSearch />
                         </div>
-                        </div>
-
                         </div>
                         <h2 className="mt-8 text-xl font-bold text-left text-black max-md:mt-10 max-md:max-w-full">Data terbaru</h2>
                         <div className="px-0.5 mt-3.5 max-md:max-w-full">
