@@ -2,7 +2,7 @@ import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn } from 'react-icons/f
 
 export default function Footer() {
     return (
-        <footer className="bg-[#2B2945] text-white py-8 px-4">
+        <footer className="bg-[#2B2945] text-white py-8 px-4 relative bottom-0 w-full">
             <div className="flex justify-center mb-8">
                 <div className="w-1/4">
                     <img src="/logo_landscape_white.png" alt="ECO-TOURISM GUIDE" className="w-auto h-20 mb-4" />
