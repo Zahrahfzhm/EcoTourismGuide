@@ -16,7 +16,7 @@ export default function InputSearch() {
     }
 
     return(
-        <div className="flex gap-0 px-2 py-1 rounded-xl bg-zinc-50 bg-opacity-90">
+        <div className="flex gap-0 px-2 py-1 rounded-xl bg-zinc-50 bg-opacity-90 shadow-md">
         <div className="flex items-center">
             <button className="p-1.5 text-lg font-medium" onClick={handleSearch}>
                 <MagnifyingGlass size={24} />

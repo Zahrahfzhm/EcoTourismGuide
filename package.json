@@ -1,0 +1,12 @@
+{
+  "name": "rpl5",
+  "version": "1.0.0",
+  "description": "Pada pertemuan GWE yang pertama ini, kita akan membahas mengenai tools-tools yang akan teman-teman pakai selama belajar di Study Group EDM. Mulai dari Notebook hingga Github, tools-tools ini dibutuhkan karena kalian akan berkolaborasi dalam sebuah kelompok untuk mengerjakan suatu projek.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
