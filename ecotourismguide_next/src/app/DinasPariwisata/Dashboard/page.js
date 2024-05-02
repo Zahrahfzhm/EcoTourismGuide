@@ -1,10 +1,10 @@
-import MainContainer from "@/components/Container/DashboardAdmin";
-
+import DashboardAdminContent from "@/components/Content/DashboardAdmin/DashboardContent"
 
 export default function Home() {
   return (
 
-      <MainContainer />
+    <DashboardAdminContent />
+
 
   )
 }
