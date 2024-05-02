@@ -117,7 +117,7 @@ export default function DashboardAdminContainer({ handleClick1, handleClick2, ha
                 </div>
             </div>
             <div className="flex-col w-1/4 pr-4 pb-2.5">
-                <div className="h-[10%]  bg-[#B9F4E0] rounded-lg shadow-md flex">
+                <div className="h-[10%]  bg-[#B9F4E0] rounded-lg shadow-md flex items-center">
                     <button
                     className="flex flex-col gap-justify-center text-center whitespace-nowrap max-w-[273px]"
                     onClick={handleClick}
