@@ -1,6 +1,6 @@
 export default function MonitorVerifikasi(){
     return(
-        <div className="max-w-sm mx-auto my-6 px-6 py-6 rounded-lg shadow-md">
+        <div className="max-w-xs mx-6 my-6 px-6 py-6 bg-white rounded-lg shadow-md">
             <div>
                 <p className="text-xl font-semibold">Menunggu Konfirmasi</p>
                 <p className="mt-16 text-base font-normal">Total dokumen:</p>
