@@ -4,6 +4,7 @@ export default function Layout({ children }) {
     return (
         <div className="flex space-x-6">
             <Sidebar />
+            
             {children}
         </div>
     );
