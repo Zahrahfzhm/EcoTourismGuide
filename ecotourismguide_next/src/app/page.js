@@ -4,7 +4,7 @@ import DashboardWisatawanContainer from "@/components/Container/DashboardWisataw
 
 export default function Home() {
   return (
-    <div>
+    <div className="">
       <Header />
       <DashboardWisatawanContainer />
       <Footer />
