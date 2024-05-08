@@ -1,13 +1,15 @@
-import Header from "../components/Navbar/header";
+// import React from 'react';
+
+import DashboardHome from "@/components/Content/DahsboardHome";
+import Header from "@/components/Navbar/header";
 import Footer from "@/components/Navbar/footer";
-import DashboardWisatawanContainer from "@/components/Container/DashboardWisatawan";
 
 export default function Home() {
-  return (
-    <div className="">
-      <Header />
-      <DashboardWisatawanContainer />
-      <Footer />
-    </div>
-  );
+    return (
+        <div className="">
+            <Header/>
+            <DashboardHome/>
+            <Footer/>
+        </div>
+    );
 }
