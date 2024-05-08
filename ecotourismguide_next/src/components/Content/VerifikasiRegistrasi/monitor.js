@@ -1,12 +1,14 @@
 "use client"
 
 import MainContainer from "@/components/Container/DashboardAdmin/midContainer";
+import { useRouter } from 'next/navigation';
 
 export default function MonitorVerifikasi(){
+    const router = useRouter();
 
     const handleClickTable = (event) => {
         event.preventDefault()
-        router.push('/DinasPariwisata/Verifiksasi/DaftarProposal');
+        router.push('/DinasPariwisata/Verifikasi/DaftarProposal');
     };
 
     return(
