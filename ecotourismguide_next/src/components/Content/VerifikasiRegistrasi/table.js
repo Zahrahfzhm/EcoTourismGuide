@@ -3,13 +3,13 @@ import MainContainer from "@/components/Container/DashboardAdmin/midContainer";
 export default function TabelVerifikasi(){
     return(
         <MainContainer>
-            <p className="mx-6 mt-10 text-xl font-bold">Daftar proposal</p>
+            <p className="mx-6 mt-10 text-xl font-bold text-white">Daftar proposal</p>
             
             <div className="mx-6 mt-6">
                 <div className="flex flex-row gap-x-4">
                     <div className="flex flex-col">
                         <p className="mb-2 text-sm font-semibold text-white">Tempat wisata</p>
-                        <div className="border border-2 border-white"></div>
+                        <div className="border-2 border-white"></div>
                     </div>
                     
                     <p className="mb-2 text-sm font-semibold">UMKM</p> 
@@ -17,7 +17,6 @@ export default function TabelVerifikasi(){
                 
                 <hr className="border border-white"></hr>
             </div>
-            
 
             <div className="flex flex-col mx-6">
                 <div className="flex flex-row mx-6 mt-4 gap-x-3">
