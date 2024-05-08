@@ -2,14 +2,15 @@
 
 import Image from "next/image";
 import InputSearch from "@/components/Content/DashboardAdmin/InputSearch";
-import MainContainer from "@/components/Container/DashboardAdmin/mainContainer";
+import MidContainer from "@/components/Container/DashboardAdmin/midContainer";
+
 
 export default function MainContent () {
     const handleClick = () => {
 
     };
     return(
-        <MainContainer>
+        <MidContainer>
             <div className="flex flex-col justify-center max-w-full">
                 <section className="flex flex-col px-6 pt-5 pb-5 w-full rounded-xl max-md:pl-5 max-md:max-w-full ">
                     <div className="flex justify-between items-center px-px max-md:flex-wrap max-md:max-w-full">
@@ -114,6 +115,6 @@ export default function MainContent () {
                     </div>
                 </section>
             </div>
-        </MainContainer>
+        </MidContainer>
     )
 }

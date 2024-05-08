@@ -1,10 +1,8 @@
-import DashboardAdminContent from "@/components/Content/DashboardAdmin/DashboardContent"
+import DashboardAdminContent from "@/components/Content/DashboardAdmin/DashboardContent";
 
-export default function Home() {
+
+export default function Home({}) {
   return (
-
-    <DashboardAdminContent />
-
-
+    <DashboardAdminContent/>
   )
 }

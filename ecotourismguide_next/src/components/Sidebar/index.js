@@ -18,6 +18,11 @@ export default function Sidebar() {
         router.push('/DinasPariwisata/Dashboard');
     };
 
+    const handleClickUpload = (event) => {
+        event.preventDefault()
+        router.push('/DinasPariwisata/Upload');
+    };
+
     return (
         <div className="flex h-screen w-[240px]">
             <div className="bg-white-800 text-black flex flex-col items-center ">
@@ -26,7 +31,7 @@ export default function Sidebar() {
                 </div>
                 <div className="mt-0 flex flex-col p-8 ">
                     <button className="text-left w-[208px] h-[60px] text-md bg-white hover:bg-[#1EC28B] hover:shadow-md hover:text-white shadow-md text-black px-7 py-2 rounded-lg transition-colors duration-300 ease-in-ou "
-                    onClick={handleClickDashboard}>
+                        onClick={handleClickDashboard}>
                         <div className="flex items-center space-x-2">
                             <HouseSimple size={20} />
                             <span>Dashboard</span>
@@ -41,7 +46,10 @@ export default function Sidebar() {
                             <span>Verifikasi UMKM</span>
                         </div>
                     </button>
-                    <button className="text-left w-[208px] h-[60px] text-md bg-white hover:bg-[#1EC28B] hover:shadow-md hover:text-white shadow-md text-black px-7 py-2 rounded-lg transition-colors duration-300 ease-in-out mt-6">
+                    <button 
+                        className="text-left w-[208px] h-[60px] text-md bg-white hover:bg-[#1EC28B] hover:shadow-md hover:text-white shadow-md text-black px-7 py-2 rounded-lg transition-colors duration-300 ease-in-out mt-6"
+                        onClick={handleClickUpload}
+                    >
                         <div className="flex items-center space-x-2">
                             <TrayArrowUp size={20} />
                             <span>Upload Konten</span>

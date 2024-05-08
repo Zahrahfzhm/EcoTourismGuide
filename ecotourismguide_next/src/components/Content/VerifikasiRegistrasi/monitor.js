@@ -1,6 +1,6 @@
 "use client"
 
-import MainContainer from "@/components/Container/DashboardAdmin/mainContainer";
+import MainContainer from "@/components/Container/DashboardAdmin/midContainer";
 
 export default function MonitorVerifikasi(){
 
