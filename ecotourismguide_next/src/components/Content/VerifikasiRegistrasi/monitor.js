@@ -11,7 +11,7 @@ export default function MonitorVerifikasi(){
 
     return(
         <MainContainer>
-            <p className="mx-6 mt-10 text-xl font-bold">Verifikasi Registrasi</p>
+            <p className="mx-6 mt-10 text-xl font-bold text-white">Verifikasi Registrasi</p>
             
             <div className="flex flex-col">
                 <div className="flex flex-row mt-6">
