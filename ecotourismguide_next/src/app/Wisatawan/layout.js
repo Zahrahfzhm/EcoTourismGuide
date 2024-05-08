@@ -1,6 +1,6 @@
-import "../globals.css";
+
 import WisatawanContainer from "@/components/Container/DashboardWisatawan";
-import Header from "../components/Navbar/header";
+import Header from "@/components/Navbar/header";
 import Footer from "@/components/Navbar/footer";
 
 export const metadata = {
