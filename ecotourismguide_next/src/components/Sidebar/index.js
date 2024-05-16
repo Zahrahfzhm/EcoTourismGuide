@@ -24,7 +24,7 @@ export default function Sidebar() {
     };
 
     return (
-        <div className="flex h-screen w-[240px]">
+        <div className="flex h-screen w-[240px] shadow-lg">
             <div className="bg-white-800 text-black flex flex-col items-center ">
                 <div className="p-3">
                     <Image src="/logo_potrait.png" alt="Logo"  width={120} height={120}/>

@@ -22,8 +22,14 @@ export default function RatingWisata(){
                     <p className="mt-8 text-sm font-semibold text-balance">Berikan ulasanmu, apa yang bikin kamu puas?</p>    
                     <textarea type="text" className="mt-1.5 px-4 py-2 w-1/2 h-36 border border-gray-400 rounded-lg text-xs text-top" style={{ lineHeight: '1' }} placeholder="Yuk, ceritain kepuasanmu tentang kualitas tempat wisata dan pelayanannya" />
 
-                    <p className="mt-8 text-sm font-semibold text-balance">Unggah pengalaman mengesankanmu</p> 
+                    <p className="mt-6 text-sm font-semibold text-balance">Unggah pengalaman mengesankanmu</p>
+                    <div className="">
+                        <input type="file" className="mt-2 text-sm" accept=".jpg, .png, .mp4"/>
+                    </div>
+                     
                     
+                    
+
                 </div>
                 
             </div>
