@@ -1,15 +1,7 @@
-export default function DashboardAdminContainer() {
-    return (
-        <div className="flex space-x-6 mt-4">
-            <div className="h-[802px] w-[868px] bg-[#B9F4E0] rounded-lg">
-            </div>
-            <div className="flex-col w-[257px]">
-                <div className="h-[77px]  bg-[#B9F4E0] rounded-lg">
-                    
-                </div>
-                <div className="mt-2.5 h-[715px]  bg-[#B9F4E0] rounded-lg">
-                </div>
-            </div>
+export default function AdminContainer({children}){
+    return(
+        <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-5 mt-4 mb-4 w-full max-h-screen">
+            {children}
         </div>
     )
 }

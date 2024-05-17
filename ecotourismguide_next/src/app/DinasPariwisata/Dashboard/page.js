@@ -1,11 +1,8 @@
-import MainContainer from "@/components/Container/DashboardAdmin";
-import Sidebar from "@/components/Sidebar"
+import DashboardAdminContent from "@/components/Content/DashboardAdmin/DashboardContent";
 
-export default function Home() {
+
+export default function Home({}) {
   return (
-    <div className="flex space-x-6">
-      <Sidebar />
-      <MainContainer />
-    </div>
+    <DashboardAdminContent/>
   )
 }
