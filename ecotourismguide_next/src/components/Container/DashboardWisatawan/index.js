@@ -1,9 +1,9 @@
-import React from 'react';
-
-export default function DashboardWisatawanContainer({ children }) {
+export default function WisatawanContainer({ children }) {
     return (
-        <div className="bg-[#B9F4E0] min-h-screen ">
+      <div>
+        <section className="bg-[#B9F4E0] min-h-screen">
           {children}
-        </div>
+        </section>
+      </div>
     );
 }
