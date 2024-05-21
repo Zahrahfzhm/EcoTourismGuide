@@ -1,0 +1,80 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model Dinas_pariwisata {
+  dinas_id            Int @id @default(autoincrement())
+  nama                String
+  jabatan             String
+  divisi              String
+  no_tlp              Int
+}
+
+model Wisatawan{
+  user_id             Int @id @default(autoincrement())
+  nama_wisatawan      String @db.VarChar(255)
+  jenis_kelamin       String
+  alamat              String @db.VarChar(255)
+}
+
+model Destinasi {
+  destination_id                    Int @id @default(autoincrement())
+  nama_destinasi                    String @db.VarChar(255)
+  deskripsi                         String @db.VarChar(255)
+  jenis_wisata                      String
+  fasilitas                         String
+  harga                             String @db.VarChar(255)
+  lokasi                            String @db.VarChar(255)
+  daerah                            String
+  
+  rating_id                         String                     
+}
+
+model Rating{
+  rating_id                         Int @id @default(autoincrement())
+  rating                            Int
+  review                            String
+
+  destination_id                    Int
+}
+
+model Transportasi{
+  transportasi_id                 Int @id @default(autoincrement())
+  transportasi_tipe               String @db.VarChar(255)
+  estimasi                        String @db.VarChar(255)
+
+  destination_id                  Int
+}
+
+model StatusReg{
+  statusreg_id              Int @id @default(autoincrement())
+  status                    String @db.VarChar(255)
+  
+  dinas_id                  Int
+  destinasi_id              Int
+}
+
+model Pelaku_wisata{
+  pelaku_id                 Int @id @default(autoincrement())
+  destinasi_id              Int 
+  nama_pelaku               String @db.VarChar(255)
+
+  statusreg_id              Int
+}
+
+model Content{
+  content_id                Int @id @default(autoincrement())
+  content_tipe              String @db.VarChar(255)
+  content_deskripsi         String @db.VarChar(255)
+}
