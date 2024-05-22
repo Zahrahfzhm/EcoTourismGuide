@@ -1,11 +1,11 @@
 import WisatawanContainer from "@/components/Container/DashboardWisatawan";
-import DashboardDaerahWisatawanContent from "@/components/Content/DashboardWisatawan/listdaerah";
+import DashboardWisatawanIsiContent from "@/components/Content/DashboardWisatawan/isicontent";
 
 export default function Home() {
   return (
     <div className="">
       <WisatawanContainer>
-        <DashboardDaerahWisatawanContent/>
+        <DashboardWisatawanIsiContent/>
       </WisatawanContainer>
     </div>
   );
