@@ -7,7 +7,7 @@ const Cardwisata = ({ imageSrc, title, description,link }) => (
             <h2 className="mt-5 ml-3 text-2xl font-bold text-black max-md:ml-2.5">{title}</h2>
             <p className="mt-2.5 ml-3 text-sm leading-7 text-zinc-800 max-md:ml-2.5">{description}</p>
             <a href={link}>
-            <button className="justify-center self-start px-8 py-5 mt-4 ml-3 text-lg font-bold leading-6 text-white whitespace-nowrap bg-cyan-900 rounded-lg max-md:px-5 max-md:ml-2.5" tabindex="0">
+            <button className="justify-center self-start px-8 py-5 mt-4 ml-3 text-lg font-bold leading-6 text-white whitespace-nowrap bg-cyan-900 rounded-lg max-md:px-5 max-md:ml-2.5" tabIndex="0">
                 Explore
             </button>
             </a>
