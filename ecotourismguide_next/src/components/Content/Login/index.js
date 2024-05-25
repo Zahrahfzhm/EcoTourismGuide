@@ -1,26 +1,25 @@
-import React, { useState } from 'react';
-import { PrismaClient } from '@prisma/client';
+"use client"
 
-const prisma = new PrismaClient();
+
+import React, { useState } from 'react';
+
 
 function LoginForm() {
-  const [username, setUsername] = useState('');
+  const [nama_pelaku, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
   const handleLogin = async (event) => {
     event.preventDefault();
+    const data = {nama_pelaku, password}
     try {
-      const user = await prisma.Wisatawan.findUnique({
-        where: {
-          nama_wisatawan: username,
-        },
-      });
-      if (user && user.password === password) {
-        console.log('Login successful:', username);
-        // Redirect or set user session
-      } else {
-        console.log('Invalid credentials');
-      }
+        const response = await fetch("api/v1/login", {
+            method: "POST",
+            body: JSON.stringify(data)
+        }
+        )
+        const loginForm = await response.json()
+        console.log({loginForm})
+
     } catch (error) {
       console.error('Login error:', error);
     }
@@ -35,10 +34,9 @@ function LoginForm() {
             type="text"
             id="username"
             name="username"
-            value={username}
+            value={nama_pelaku}
             onChange={(e) => setUsername(e.target.value)}
             required
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
           />
         </div>
         <div className="form-group mb-6">
@@ -53,7 +51,7 @@ function LoginForm() {
             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
           />
         </div>
-        <button type="submit" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Login</button>
+        <button type="submit" className="login-button bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Login</button>
       </form>
     </div>
   );

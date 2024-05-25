@@ -14,11 +14,14 @@ datasource db {
 }
 
 model Dinas_pariwisata {
-  dinas_id            Int @id @default(autoincrement())
+  id                  Int @id @default(autoincrement())
   nama                String
   jabatan             String
   divisi              String
   no_tlp              Int
+  statusreg           StatusReg[] 
+  destinasi           Destinasi[]
+  content             Content[]
 }
 
 model Wisatawan{
@@ -29,7 +32,7 @@ model Wisatawan{
 }
 
 model Destinasi {
-  destination_id                    Int @id @default(autoincrement())
+  id                                Int @id @default(autoincrement())
   nama_destinasi                    String @db.VarChar(255)
   deskripsi                         String @db.VarChar(255)
   jenis_wisata                      String
@@ -37,44 +40,59 @@ model Destinasi {
   harga                             String @db.VarChar(255)
   lokasi                            String @db.VarChar(255)
   daerah                            String
-  
-  rating_id                         String                     
+  rating_id                         Int @unique
+  rating                            Rating @relation(fields: [rating_id], references: [id])
+  transportasi_id                   Int @unique
+  transportasi                      Transportasi @relation(fields: [transportasi_id], references: [id])
+  statusreg                         StatusReg?
+  id_pelaku                         Int @unique
+  pelaku_wisata                     Pelaku_wisata@relation(fields: [id_pelaku] , references: [id])  
+  dinas_pariwisata                  Dinas_pariwisata[]                 
 }
 
 model Rating{
-  rating_id                         Int @id @default(autoincrement())
+  id                                Int @id @default(autoincrement())
   rating                            Int
   review                            String
-
-  destination_id                    Int
+  destinasi                         Destinasi[]
 }
 
 model Transportasi{
-  transportasi_id                 Int @id @default(autoincrement())
+  id                              Int @id @default(autoincrement())
   transportasi_tipe               String @db.VarChar(255)
   estimasi                        String @db.VarChar(255)
-
-  destination_id                  Int
+  destinasi                       Destinasi[]
 }
 
 model StatusReg{
   statusreg_id              Int @id @default(autoincrement())
   status                    String @db.VarChar(255)
-  
-  dinas_id                  Int
-  destinasi_id              Int
+  dinas                     Dinas_pariwisata[]
+  destinasi_id              Int @unique
+  destinasi                 Destinasi @relation(fields: [destinasi_id], references: [id])
+  pelaku_id                 Int @unique
+  pelaku_wisata             Pelaku_wisata @relation(fields: [pelaku_id] , references: [id])
 }
 
 model Pelaku_wisata{
-  pelaku_id                 Int @id @default(autoincrement())
-  destinasi_id              Int 
+  id                        Int @id @default(autoincrement())
   nama_pelaku               String @db.VarChar(255)
-
-  statusreg_id              Int
+  password                  String @db.VarChar(255)
+  nama_wisata               String @db.VarChar(255)
+  alamat                    String @db.VarChar(255)
+  Deskripsi_wisata          String @db.VarChar(255)
+  no_telpon                 String @db.VarChar(255)
+  email                     String @db.VarChar(255)
+  fasilitas                 String @db.VarChar(255)
+  tarif                     Float
+  destinasi                 Destinasi[]
+  statusreg                 StatusReg[]
+  
 }
 
 model Content{
   content_id                Int @id @default(autoincrement())
   content_tipe              String @db.VarChar(255)
   content_deskripsi         String @db.VarChar(255)
+  dinas_pariwisata          Dinas_pariwisata[]
 }

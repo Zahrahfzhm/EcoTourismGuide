@@ -1,12 +1,15 @@
-import Header from "../components/Navbar/header";
+import WisatawanContainer from "@/components/Container/DashboardWisatawan";
+import Header from "@/components/Navbar/header";
 import Footer from "@/components/Navbar/footer";
-import DashboardWisatawanContainer from "@/components/Container/DashboardWisatawan";
+import DashboardWisatawanContent from "@/components/Content/DashboardWisatawan/index";
 
 export default function Home() {
   return (
     <div className="">
       <Header />
-      <DashboardWisatawanContainer />
+      <WisatawanContainer>
+        <DashboardWisatawanContent/>
+      </WisatawanContainer>
       <Footer />
     </div>
   );

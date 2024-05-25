@@ -1,9 +1,9 @@
+import UploadAdminContent from '@/components/Content/UploadKonten'
 import React from 'react'
 
-function Upload() {
+export default function Upload() {
   return (
-    <div></div>
+    <UploadAdminContent/>
   )
 }
 
-export default Upload
