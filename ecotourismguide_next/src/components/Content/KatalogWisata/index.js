@@ -48,9 +48,9 @@ export default function KatalogWisata(){
                             <input 
                                 data-unify="TextField" 
                                 name="pmin" 
-                                placeholder="Harga Minimum" 
+                                placeholder="Harga Maximum" 
                                 type="text"
-                                className="border border-gray-300 rounded-md p-1"
+                                className="border border-garay-300 rounded-md p-1"
                                 value=""
                             />
                         </div>
@@ -64,7 +64,7 @@ export default function KatalogWisata(){
                             </label>
                         </div>
                         
-
+                    
                     </div>
                     
                 </div>
