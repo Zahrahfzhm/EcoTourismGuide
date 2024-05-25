@@ -76,18 +76,17 @@ model StatusReg{
 
 model Pelaku_wisata{
   id                        Int @id @default(autoincrement())
-  nama_pelaku               String @db.VarChar(255)
+  nama_pelaku               String @unique @db.VarChar(255)
   password                  String @db.VarChar(255)
-  nama_wisata               String @db.VarChar(255)
-  alamat                    String @db.VarChar(255)
-  Deskripsi_wisata          String @db.VarChar(255)
-  no_telpon                 String @db.VarChar(255)
-  email                     String @db.VarChar(255)
-  fasilitas                 String @db.VarChar(255)
-  tarif                     Float
+  nama_wisata               String @db.VarChar(255) @default("")
+  alamat                    String @db.VarChar(255) @default("")
+  Deskripsi_wisata          String @db.VarChar(255) @default("")
+  no_telpon                 String @db.VarChar(255) @default("")
+  email                     String @db.VarChar(255) @default("")
+  fasilitas                 String @db.VarChar(255) @default("")
+  tarif                     String @db.VarChar(255) @default("")
   destinasi                 Destinasi[]
   statusreg                 StatusReg[]
-  
 }
 
 model Content{

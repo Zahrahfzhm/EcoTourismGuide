@@ -1,12 +1,12 @@
 "use client"
-
-
 import React, { useState } from 'react';
+import { useRouter } from 'next/navigation';
 
 
 function LoginForm() {
   const [nama_pelaku, setUsername] = useState('');
   const [password, setPassword] = useState('');
+  const router = useRouter();
 
   const handleLogin = async (event) => {
     event.preventDefault();
@@ -14,11 +14,19 @@ function LoginForm() {
     try {
         const response = await fetch("api/v1/login", {
             method: "POST",
+            headers: {
+                'Content-Type': 'application/json',
+            },
             body: JSON.stringify(data)
         }
         )
-        const loginForm = await response.json()
+        const loginForm = await response.json();
         console.log({loginForm})
+        if (loginForm.isAuthenticated) {
+            router.push('/UMKM/Dashboard'); // Redirect to a dashboard page or some protected page
+        } else {
+            setError('Invalid credentials');
+        }
 
     } catch (error) {
       console.error('Login error:', error);
