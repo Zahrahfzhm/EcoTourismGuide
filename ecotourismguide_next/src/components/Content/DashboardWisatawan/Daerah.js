@@ -3,7 +3,7 @@ export default function DashboardDaerahWisatawanContent() {
         <section className="flex flex-col items-center bg-white">
         <div className="overflow-hidden relative flex-col justify-center items-center self-stretch px-16 pt-60 pb-56  w-full text-9xl font-semibold leading-10 text-center text-white whitespace-nowrap shadow-sm min-h-[597px] max-md:px-5 max-md:py-10 max-md:max-w-full max-md:text-4xl">
             <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/7a14881e8b10ac666629523b4f2de6be2b783f33e5d571ddacaa57946879d289?apiKey=59541bf2346a4f44991d05930261be7f&" alt="" className="object-cover absolute inset-0 size-full" />
-            <span classNameName="relative z-10 px-4 py-2 rounded">Jakarta</span>
+            <span className="relative z-10 px-4 py-2 rounded">Jakarta</span>
         </div>
         <section className="justify-center py-16 mt-5 w-full max-w-[1240px] max-md:max-w-full">
             <div className="flex gap-5 max-md:flex-col max-md:gap-0">
