@@ -76,7 +76,8 @@ model StatusReg{
 
 model Pelaku_wisata{
   id                        Int @id @default(autoincrement())
-  destinasi_id              Int 
+  destinasi_id              Int
+  password                  String @db.VarChar(255)
   destinasi                 Destinasi[]  
   nama_pelaku               String @db.VarChar(255)
   statusreg                 StatusReg[]
