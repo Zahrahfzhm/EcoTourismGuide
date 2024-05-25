@@ -76,10 +76,16 @@ model StatusReg{
 
 model Pelaku_wisata{
   id                        Int @id @default(autoincrement())
-  destinasi_id              Int
-  password                  String @db.VarChar(255)
-  destinasi                 Destinasi[]  
   nama_pelaku               String @db.VarChar(255)
+  password                  String @db.VarChar(255)
+  nama_wisata               String @db.VarChar(255)
+  alamat                    String @db.VarChar(255)
+  Deskripsi_wisata          String @db.VarChar(255)
+  no_telpon                 String @db.VarChar(255)
+  email                     String @db.VarChar(255)
+  fasilitas                 String @db.VarChar(255)
+  tarif                     Float
+  destinasi                 Destinasi[]
   statusreg                 StatusReg[]
   
 }
