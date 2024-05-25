@@ -21,13 +21,18 @@ export default function KatalogWisata(){
 
                         <p className="mt-4 font-semibold">Lokasi</p>
                         <div className="flex flex-col mt-3 space-y-2">
-                            <label className="text-sm flex items-center text-slate-500"><input type="checkbox" value="Pantai/Laut" className="mr-2"/> Pantai/Laut</label>
-                            <label className="text-sm flex items-center text-slate-500"><input type="checkbox" value="Pegunungan" className="mr-2"/> Pegunungan</label>
-                            <label className="text-sm flex items-center text-slate-500"><input type="checkbox" value="Danau/Danau Buatan" className="mr-2"/> Danau/Danau Buatan</label>
-                            <label className="text-sm flex items-center text-slate-500"><input type="checkbox" value="Hutan/Hutan Tropis" className="mr-2"/> Hutan/Hutan Tropis</label>
-                            <label className="text-sm flex items-center text-slate-500"><input type="checkbox" value="Pulau" className="mr-2"/> Pulau</label>
-                            <label className="text-sm flex items-center text-slate-500"><input type="checkbox" value="Desa Wisata" className="mr-2"/> Desa Wisata</label>
-                            <label className="text-sm flex items-center text-slate-500"><input type="checkbox" value="Air Terjun/Waterfall" className="mr-2"/> Air Terjun/Waterfall</label>
+                            <label className="text-sm flex items-center text-slate-500"><input type="checkbox" value="Pantai/Laut" className="mr-2"/> Jakarta</label>
+                            <label className="text-sm flex items-center text-slate-500"><input type="checkbox" value="Pegunungan" className="mr-2"/> Bandung</label>
+                            <label className="text-sm flex items-center text-slate-500"><input type="checkbox" value="Danau/Danau Buatan" className="mr-2"/> Surabaya</label>
+                            <label className="text-sm flex items-center text-slate-500"><input type="checkbox" value="Hutan/Hutan Tropis" className="mr-2"/> Banten</label>
+                            <label className="text-sm flex items-center text-slate-500"><input type="checkbox" value="Pulau" className="mr-2"/> Lombok</label>
+                            <label className="text-sm flex items-center text-slate-500"><input type="checkbox" value="Desa Wisata" className="mr-2"/> Jogja</label>
+                            <label className="text-sm flex items-center text-slate-500"><input type="checkbox" value="Air Terjun/Waterfall" className="mr-2"/> Bogor</label>
+                            <label className="text-sm flex items-center text-slate-500"><input type="checkbox" value="Air Terjun/Waterfall" className="mr-2"/> Malang</label>
+                            <label className="text-sm flex items-center text-slate-500"><input type="checkbox" value="Air Terjun/Waterfall" className="mr-2"/> Semarang</label>
+                            <label className="text-sm flex items-center text-slate-500"><input type="checkbox" value="Air Terjun/Waterfall" className="mr-2"/> Banyuwangi</label>
+                            <label className="text-sm flex items-center text-slate-500"><input type="checkbox" value="Air Terjun/Waterfall" className="mr-2"/> Lampung</label>
+                            <label className="text-sm flex items-center text-slate-500"><input type="checkbox" value="Air Terjun/Waterfall" className="mr-2"/> Bali</label>
                         </div>
 
                         <p className="mt-4 font-semibold">Harga</p>
@@ -86,8 +91,10 @@ export default function KatalogWisata(){
                                 <div key={item} className="flex flex-col w-1/4 bg-white rounded-lg shadow-lg">
                                     <img src={`https://picsum.photos/250/250?random=${item}`} alt={`Destinasi ${item}`} className="w-full h-48 rounded-t-lg" />
                                     <div className="p-5">
-                                        <p className="text-lg font-semibold">Rp 500.000</p>
-                                        <p className="text-sm">Pantai Kuta, Bali</p>
+                                        <p className="text-sm">Destinasi ${item}</p>
+                                        <p className="text-sm font-semibold">Rp 500.000</p>
+                                        <p className="text-sm">Pantai/Laut</p>
+                                        <p className="text-sm">Bali</p>
                                     </div>
                                 </div>
                             ))}
@@ -97,8 +104,10 @@ export default function KatalogWisata(){
                                 <div key={item} className="flex flex-col w-1/4 bg-white rounded-lg shadow-lg">
                                     <img src={`https://picsum.photos/250/250?random=${item}`} alt={`Destinasi ${item}`} className="w-full h-48 rounded-t-lg" />
                                     <div className="p-5">
-                                        <p className="text-lg font-semibold">Rp 500.000</p>
-                                        <p className="text-sm">Pantai Kuta, Bali</p>
+                                        <p className="text-sm">Destinasi ${item}</p>
+                                        <p className="text-sm font-semibold">Rp 500.000</p>
+                                        <p className="text-sm">Pantai/Laut</p>
+                                        <p className="text-sm">Bali</p>
                                     </div>
                                 </div>
                             ))}
@@ -108,8 +117,10 @@ export default function KatalogWisata(){
                                 <div key={item} className="flex flex-col w-1/4 bg-white rounded-lg shadow-lg">
                                     <img src={`https://picsum.photos/250/250?random=${item}`} alt={`Destinasi ${item}`} className="w-full h-48 rounded-t-lg" />
                                     <div className="p-5">
-                                        <p className="text-lg font-semibold">Rp 500.000</p>
-                                        <p className="text-sm">Pantai Kuta, Bali</p>
+                                        <p className="text-sm">Destinasi ${item}</p>
+                                        <p className="text-sm font-semibold">Rp 500.000</p>
+                                        <p className="text-sm">Pantai/Laut</p>
+                                        <p className="text-sm">Bali</p>
                                     </div>
                                 </div>
                             ))}
@@ -119,8 +130,10 @@ export default function KatalogWisata(){
                                 <div key={item} className="flex flex-col w-1/4 bg-white rounded-lg shadow-lg">
                                     <img src={`https://picsum.photos/250/250?random=${item}`} alt={`Destinasi ${item}`} className="w-full h-48 rounded-t-lg" />
                                     <div className="p-5">
-                                        <p className="text-lg font-semibold">Rp 500.000</p>
-                                        <p className="text-sm">Pantai Kuta, Bali</p>
+                                        <p className="text-sm">Destinasi ${item}</p>
+                                        <p className="text-sm font-semibold">Rp 500.000</p>
+                                        <p className="text-sm">Pantai/Laut</p>
+                                        <p className="text-sm">Bali</p>
                                     </div>
                                 </div>
                             ))}
@@ -130,8 +143,10 @@ export default function KatalogWisata(){
                                 <div key={item} className="flex flex-col w-1/4 bg-white rounded-lg shadow-lg">
                                     <img src={`https://picsum.photos/250/250?random=${item}`} alt={`Destinasi ${item}`} className="w-full h-48 rounded-t-lg" />
                                     <div className="p-5">
-                                        <p className="text-lg font-semibold">Rp 500.000</p>
-                                        <p className="text-sm">Pantai Kuta, Bali</p>
+                                        <p className="text-sm">Destinasi ${item}</p>
+                                        <p className="text-sm font-semibold">Rp 500.000</p>
+                                        <p className="text-sm">Pantai/Laut</p>
+                                        <p className="text-sm">Bali</p>
                                     </div>
                                 </div>
                             ))}
@@ -141,8 +156,10 @@ export default function KatalogWisata(){
                                 <div key={item} className="flex flex-col w-1/4 bg-white rounded-lg shadow-lg">
                                     <img src={`https://picsum.photos/250/250?random=${item}`} alt={`Destinasi ${item}`} className="w-full h-48 rounded-t-lg" />
                                     <div className="p-5">
-                                        <p className="text-lg font-semibold">Rp 500.000</p>
-                                        <p className="text-sm">Pantai Kuta, Bali</p>
+                                        <p className="text-sm">Destinasi ${item}</p>
+                                        <p className="text-sm font-semibold">Rp 500.000</p>
+                                        <p className="text-sm">Pantai/Laut</p>
+                                        <p className="text-sm">Bali</p>
                                     </div>
                                 </div>
                             ))}
