@@ -23,8 +23,7 @@ export default function DashboardHome() {
                   <div class="flex flex-col ml-5 w-[62%] max-md:ml-0 max-md:w-full">
                     <div class="flex flex-col max-md:mt-5 max-md:max-w-full">
                       <div className="flex gap-5 max-w-full overflow-x-auto max-md:flex-col max-md:gap-0">
-                      {/* Kartu baru */}
-                      <div className="flex flex-col max-w-[280px]"> {/* Mengubah max-w-[325px] menjadi max-w-[280px] */}
+                      <div className="flex flex-col max-w-[280px]">
                           <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/32b0fcf0c022a828f7810b5a575fb4364f15698f04fa9a2bce536079f451d92a?apiKey=59541bf2346a4f44991d05930261be7f&amp;" alt="Card image" className="z-10 w-full aspect-[1.1]" />
                           <div className="flex flex-col px-6 pt-6 pb-5 w-full bg-white rounded-lg"> 
                               <h2 className="text-2xl font-bold leading-7 text-emerald-500">Card Title</h2>
