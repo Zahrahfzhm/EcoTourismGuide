@@ -1,12 +1,12 @@
 import Header from "../components/Navbar/header";
 import Footer from "../components/Navbar/footer";
-import DashboardWisatawanContainer from "../components/Container/DashboardWisatawan";
+import DetailWisata from '../components/DetailWisata/DetailWisata';
 
 export default function Home() {
   return (
     <div className="">
       <Header />
-      <DashboardWisatawanContainer />
+      <DetailWisata />
       <Footer />
     </div>
   );
