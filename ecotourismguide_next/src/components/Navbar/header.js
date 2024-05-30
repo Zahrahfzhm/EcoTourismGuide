@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-export default function nav() {
+export default function Header() {
     return(
         <nav className="shadow-md">
             <div className="flex items-center justify-between mt-0 text-lg bg-white h-[70px]">
