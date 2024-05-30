@@ -73,10 +73,13 @@ export default function KatalogWisata(){
                     </div>
                     
                 </div>
-
+                
                 <div className="flex flex-col">
                     <p className="mt-8 font-semibold">Destinasi Wisata</p>
                     <div className="mt-2 mb-8 px-4 py-2 bg-white rounded-lg shadow-md">
+                        <div>
+                            <p>search bar</p>
+                        </div>                        
                         <div className="flex justify-end items-center mt-2">
                             <p className="mr-2">Sort:</p>
                             <select className="border border-gray-300 rounded-md p-1">
