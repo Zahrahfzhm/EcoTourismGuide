@@ -1,7 +1,7 @@
 export default function WisatawanContainer({ children }) {
     return (
       <div>
-        <section className="bg-gradient-to-b from-[#1679AB] to-[#B9F4E0] min-h-screen">
+        <section className="bg-[#B9F4E0] min-h-screen">
           {children}
         </section>
       </div>
