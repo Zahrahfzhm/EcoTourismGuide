@@ -75,7 +75,7 @@ model StatusReg{
 }
 
 model Pelaku_wisata{
-  id                        Int @id @default(autoincrement())
+  id                        Int @id @unique @default(autoincrement())
   nama_pelaku               String @unique @db.VarChar(255)
   password                  String @db.VarChar(255)
   nama_wisata               String @db.VarChar(255) @default("")
