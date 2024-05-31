@@ -2,11 +2,6 @@
 const nextConfig = {
     images: {
         domains: ['cdn.builder.io'],
-        remotePatterns: [
-          {
-              hostname:"images.unsplash.com"
-          }
-      ]
       },
 };
 
