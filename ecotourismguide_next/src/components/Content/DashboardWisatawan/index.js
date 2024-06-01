@@ -1,6 +1,6 @@
 import React from 'react';
-import Cardconten  from '../../Container/DashboardWisatawan/cardcontent';
-import Cardwisata  from '../../Container/DashboardWisatawan/cardwisata';
+import Cardconten from '@/components/Container/DashboardWisatawan/cardcontent';
+import Cardwisata from '@/components/Container/DashboardWisatawan/cardwisata';
 
 export default function DashboardWisatawanContent() {
     return (

@@ -1,3 +1,5 @@
+import Cardconten from "@/components/Container/DashboardWisatawan/cardcontent";
+
 export default function DashboardWisatawanlistContent() {
     return (
         <div class="flex flex-col px-10 pt-2 pb-10 w-full max-md:px-5 max-md:max-w-full">
