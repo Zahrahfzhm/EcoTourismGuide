@@ -16,9 +16,9 @@ export default function DashboardWisatawanContent() {
                             <p className="relative mt-6 text-2xl font-medium max-md:max-w-full">
                                 Discover Sustainable Tourism Destinations in Indonesia, Enjoying the Beauty of Nature While Preserving the Environment
                             </p>
-                            <button className="flex justify-center items-center transition duration-300 ease-in-out transform hover:scale-105 hover:bg-[#1EC28B] hover:shadow-md px-16 py-5 mt-5 text-xl font-bold leading-5 text-white bg-[#1EC28B] rounded-lg max-w-[241px]">
+                            <a href="http://localhost:3000/Wisatawan/Katalog" className="flex justify-center items-center transition duration-300 ease-in-out transform hover:scale-105 hover:bg-[#1EC28B] hover:shadow-md px-16 py-5 mt-5 text-xl font-bold leading-5 text-white bg-[#1EC28B] rounded-lg max-w-[241px]">
                                 Explore
-                            </button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -124,7 +124,7 @@ export default function DashboardWisatawanContent() {
                             likes="50"
                             views="12K"
                             time="15 min ago"
-                            link=""
+                            link="http://localhost:3000/Wisatawan/KontenPariwisata/isikonten"
                         />
                     </article>
                     <article className="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
@@ -135,7 +135,7 @@ export default function DashboardWisatawanContent() {
                             likes="100"
                             views="15K"
                             time="20 min ago"
-                            link="http://localhost:3000/Wisatawan/daerahwisata"
+                            link="http://localhost:3000/Wisatawan/KontenPariwisata/isikonten"
                         />
                     </article>
                 </div>
@@ -150,7 +150,7 @@ export default function DashboardWisatawanContent() {
                             likes="20"
                             views="9K"
                             time="30 min ago"
-                            link="#"
+                            link="http://localhost:3000/Wisatawan/KontenPariwisata/isikonten"
                         />
                     </article>
                     <article className="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
@@ -161,7 +161,7 @@ export default function DashboardWisatawanContent() {
                             likes="3k"
                             views="20K"
                             time="35 min ago"
-                            link="#"
+                            link="http://localhost:3000/Wisatawan/KontenPariwisata/isikonten"
                         />
                     </article>
                 </div>
@@ -191,13 +191,13 @@ export default function DashboardWisatawanContent() {
                         imageSrc="https://cdn.builder.io/api/v1/image/assets/TEMP/081c81b2006632b7813a81be5ea5959f60aa9fdaece50b0416f79477bc301f45?apiKey=59541bf2346a4f44991d05930261be7f&"
                         title="Setu Babakan"
                         description="Pusat pelestarian budaya Betawi dengan rumah adat, kuliner khas, dan pertunjukan seni tradisional."
-                        link="#"
+                        link="http://localhost:3000/Wisatawan/Wisata/Detail"
                     />
                     <Cardwisata
                         imageSrc="https://cdn.builder.io/api/v1/image/assets/TEMP/4b3d60034c176b78267df56396683e9d1986389d6d4587c2edbbefb1ae14a511?apiKey=59541bf2346a4f44991d05930261be7f&"
                         title="Kota Tua Jakarta"
                         description="Area bersejarah dengan Museum Fatahillah, Museum Wayang, dan bangunan kolonial."
-                        link="#"
+                        link="http://localhost:3000/Wisatawan/Wisata/Detail"
                     />
                 </div>
             </section>
@@ -207,19 +207,19 @@ export default function DashboardWisatawanContent() {
                         imageSrc="https://cdn.builder.io/api/v1/image/assets/TEMP/6cb910e5122a0cf80630e2ce8c2ce80dce2a83b2723267f83a255eeb5ebc8b77?apiKey=59541bf2346a4f44991d05930261be7f&"
                         title="Glodok (Chinatown)"
                         description="Area pecinan dengan pasar tradisional, toko obat Tionghoa, dan kuil-kuil bersejarah."
-                        link="#"
+                        link="http://localhost:3000/Wisatawan/Wisata/Detail"
                     />
                     <Cardwisata
                         imageSrc="https://cdn.builder.io/api/v1/image/assets/TEMP/35deb543888a3e01a358388d63f777b00d11a67c60c16517d0faafc7f6ea97d4?apiKey=59541bf2346a4f44991d05930261be7f&"
                         title="Pasar Jatinegara"
                         description="Pasar tradisional yang menjual berbagai barang, termasuk kebutuhan sehari-hari."
-                        link="#"
+                        link="http://localhost:3000/Wisatawan/Wisata/Detail"
                     />
                     <Cardwisata
                         imageSrc="https://cdn.builder.io/api/v1/image/assets/TEMP/7b2bcfdc4d76d2e3c8de01c66f741e3eeb8ae4b687b69a13c8af9c68429af52e?apiKey=59541bf2346a4f44991d05930261be7f&"
                         title="Taman Margasatwa Ragunan"
                         description="Kebun binatang dengan berbagai satwa eksotis dan lingkungan hijau yang luas."
-                        link="#"
+                        link="http://localhost:3000/Wisatawan/Wisata/Detail"
                     />
                 </div>
             </section>
@@ -229,25 +229,25 @@ export default function DashboardWisatawanContent() {
                         imageSrc="https://cdn.builder.io/api/v1/image/assets/TEMP/fcd451893a8560a960c8b530404b1d74db8e0a65809139576bbc722b16281ea7?apiKey=59541bf2346a4f44991d05930261be7f&"
                         title="Ancol"
                         description="Ancol Dreamland adalah destinasi sempurna untuk rekreasi keluarga."
-                        link="#"
+                        link="http://localhost:3000/Wisatawan/Wisata/Detail"
                     />
                     <Cardwisata
                         imageSrc="https://cdn.builder.io/api/v1/image/assets/TEMP/7de84f8d62638975f278d0219d009999282cf7da8bc74e8c950dd71cf0383232?apiKey=59541bf2346a4f44991d05930261be7f&"
                         title="Taman Ayodya"
                         description="Taman kecil yang terletak di Blok M, Jakarta Selatan, dengan pepohonan rindang dan area bermain anak. Cocok untuk santai dan rekreasi keluarga."
-                        link="#"
+                        link="http://localhost:3000/Wisatawan/Wisata/Detail"
                     />
                     <Cardwisata
                         imageSrc="https://cdn.builder.io/api/v1/image/assets/TEMP/4b3d60034c176b78267df56396683e9d1986389d6d4587c2edbbefb1ae14a511?apiKey=59541bf2346a4f44991d05930261be7f&"
                         title="Kota Tua Jakarta"
                         description="Area bersejarah dengan Museum Fatahillah, Museum Wayang, dan bangunan kolonial."
-                        link="#"
+                        link="http://localhost:3000/Wisatawan/Wisata/Detail"
                     />
                 </div>
             </section>
             </section>
             <div class="flex justify-center">
-                <a href="#">
+                <a href="http://localhost:3000/Wisatawan/Katalog">
                     <button class="px-8 py-5 mt-8 mb-10 text-lg font-bold leading-6 text-white whitespace-nowrap bg-emerald-500 rounded-lg max-md:px-5 max-md:mt-10">
                         Lainnya
                     </button>
@@ -261,13 +261,13 @@ export default function DashboardWisatawanContent() {
                 </section>
                 <section class="mt-10 max-md:mt-10 max-md:max-w-full">
                 <div className="flex gap-10 max-md:flex-col max-md:gap-5">
-                    <a href="http://localhost:3000/Wisatawan/daerahwisata" className="w-6/12 max-md:w-full">
+                    <a href="http://localhost:3000/Wisatawan/ProfilDaerah/DaerahWisata" className="w-6/12 max-md:w-full">
                         <div className="relative flex items-center justify-center overflow-hidden bg-green-200 rounded-lg min-h-[226px] max-md:min-w-full">
                             <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/a5bf3417699cfc25fe2fb0835f9fc5811689af2ae97e5228d607689836831a4d?apiKey=59541bf2346a4f44991d05930261be7f&" alt="Surabaya" className="absolute inset-0 object-cover w-full h-full" />
-                            <span className="relative z-10 px-4 py-2 text-5xl font-semibold text-white">Surabaya</span>
+                            <span className="relative z-10 px-4 py-2 text-5xl font-semibold text-white">Jakarta</span>
                         </div>
                     </a>
-                    <a href="http://localhost:3000/Wisatawan/daerahwisata" className="w-6/12 max-md:w-full">
+                    <a href="http://localhost:3000/Wisatawan/ProfilDaerah/DaerahWisata" className="w-6/12 max-md:w-full">
                         <div className="relative flex items-center justify-center overflow-hidden bg-green-200 rounded-lg min-h-[226px] max-md:min-w-full">
                             <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/b550acaeba7eeda0b6b16a2542169099f8f31947e316d59499ed399f98ea7d52?apiKey=59541bf2346a4f44991d05930261be7f&" alt="Bandung" className="absolute inset-0 object-cover w-full h-full" />
                             <span className="relative z-10 px-4 py-2 text-5xl font-semibold text-white">Bandung</span>
@@ -277,13 +277,13 @@ export default function DashboardWisatawanContent() {
                 </section>
                 <section class="mt-10 max-md:mt-10 max-md:max-w-full">
                 <div className="flex gap-10 max-md:flex-col max-md:gap-5">
-                    <a href="http://localhost:3000/Wisatawan/daerahwisata" className="w-6/12 max-md:w-full">
+                    <a href="http://localhost:3000/Wisatawan/ProfilDaerah/DaerahWisata" className="w-6/12 max-md:w-full">
                         <div className="relative flex items-center justify-center overflow-hidden bg-green-200 rounded-lg min-h-[226px] max-md:min-w-full">
                             <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/afb912cf50b4158faab1ce019f566f77592563708fdb4ab3f64bda6cd0128352?apiKey=59541bf2346a4f44991d05930261be7f&&" alt="Surabaya" className="absolute inset-0 object-cover w-full h-full" />
                             <span className="relative z-10 px-4 py-2 text-5xl font-semibold text-white">Surabaya</span>
                         </div>
                     </a>
-                    <a href="http://localhost:3000/Wisatawan/daerahwisata" className="w-6/12 max-md:w-full">
+                    <a href="http://localhost:3000/Wisatawan/ProfilDaerah/DaerahWisata" className="w-6/12 max-md:w-full">
                         <div className="relative flex items-center justify-center overflow-hidden bg-green-200 rounded-lg min-h-[226px] max-md:min-w-full">
                             <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/2371324036005988b1aed1ea4e691ccc93fea6240f5d3744362872523cacf6e0?apiKey=59541bf2346a4f44991d05930261be7f&" alt="Bandung" className="absolute inset-0 object-cover w-full h-full" />
                             <span className="relative z-10 px-4 py-2 text-5xl font-semibold text-white">Madiun</span>
@@ -293,13 +293,13 @@ export default function DashboardWisatawanContent() {
                 </section>
                 <section class="mt-10 max-md:mt-10 max-md:max-w-full">
                 <div className="flex gap-10 max-md:flex-col max-md:gap-5">
-                    <a href="http://localhost:3000/Wisatawan/daerahwisata" className="w-6/12 max-md:w-full">
+                    <a href="hhttp://localhost:3000/Wisatawan/ProfilDaerah/DaerahWisata" className="w-6/12 max-md:w-full">
                         <div className="relative flex items-center justify-center overflow-hidden bg-green-200 rounded-lg min-h-[226px] max-md:min-w-full">
                             <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/c790467c7f2142e0d2c2ee2f36066e037bb0b35632f1e93a82f75b1b14aa0fa4?apiKey=59541bf2346a4f44991d05930261be7f&" alt="Surabaya" className="absolute inset-0 object-cover w-full h-full" />
                             <span className="relative z-10 px-4 py-2 text-5xl font-semibold text-white">Banten</span>
                         </div>
                     </a>
-                    <a href="http://localhost:3000/Wisatawan/listdaerah" className="w-6/12 max-md:w-full">
+                    <a href="http://localhost:3000/Wisatawan/ProfilDaerah/ListDaerah" className="w-6/12 max-md:w-full">
                         <div className="relative flex items-center justify-center overflow-hidden bg-green-200 rounded-lg min-h-[226px] max-md:min-w-full">
                             <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/8ccec3df1c8a14e419c4b2fa1e542cfa1a68b0ac941c6bed36099b356afe7907?apiKey=59541bf2346a4f44991d05930261be7f&" alt="Bandung" className="absolute inset-0 object-cover w-full h-full" />
                             <span className="relative z-10 px-4 py-2 text-5xl font-semibold text-white">lainnya...</span>
