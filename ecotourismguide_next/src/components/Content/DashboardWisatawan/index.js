@@ -167,7 +167,7 @@ export default function DashboardWisatawanContent() {
                 </div>
             </section>
             <div class="flex justify-center">
-                <a href="http://localhost:3000/Wisatawan/listkonten">
+                <a href="http://localhost:3000/Wisatawan/KontenPariwisata/listkonten">
                     <button class="px-8 py-5 mt-20 mb-10 text-lg font-bold leading-6 text-white whitespace-nowrap bg-emerald-500 rounded-lg max-md:px-5 max-md:mt-10">
                         Lainnya
                     </button>
