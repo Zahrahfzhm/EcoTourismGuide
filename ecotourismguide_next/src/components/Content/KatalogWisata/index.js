@@ -2,11 +2,11 @@ import { Star } from "@phosphor-icons/react/dist/ssr";
 
 export default function KatalogWisata(){
     return(
-        <div className="mx-36">
-            <p className="pt-10 text-xl font-bold">Katalog Wisata</p>
+        <div className="mx-36 pb-16">
+            <p className="pt-10 text-white text-xl font-bold">Katalog Wisata</p>
             <div className="flex flex-row gap-8">
                 <div className="flex flex-col">
-                    <p className="mt-8 font-semibold">Filter</p>
+                    <p className="mt-8 text-white font-semibold">Filter</p>
                     <div className="mt-2 px-4 py-2 bg-white rounded-lg shadow-md">
                         <p className="font-semibold">Kategori</p>
                         <div className="flex flex-col mt-3 space-y-2">
@@ -43,7 +43,7 @@ export default function KatalogWisata(){
                                 name="pmin" 
                                 placeholder="Harga Minimum" 
                                 type="text"
-                                className="border border-gray-300 rounded-md p-1"
+                                className="border border-gray-300 rounded-md p-1 w-36"
                                 value=""
                             />
                         </div>
@@ -52,10 +52,10 @@ export default function KatalogWisata(){
                             <div className="font-medium">Rp</div>
                             <input 
                                 data-unify="TextField" 
-                                name="pmin" 
+                                name="pmax" 
                                 placeholder="Harga Maximum" 
                                 type="text"
-                                className="border border-garay-300 rounded-md p-1"
+                                className="border border-gray-300 rounded-md p-1 w-36"
                                 value=""
                             />
                         </div>
@@ -75,10 +75,14 @@ export default function KatalogWisata(){
                 </div>
                 
                 <div className="flex flex-col">
-                    <p className="mt-8 font-semibold">Destinasi Wisata</p>
+                    <p className="mt-8 text-white font-semibold">Destinasi Wisata</p>
                     <div className="mt-2 mb-8 px-4 py-2 bg-white rounded-lg shadow-md">
-                        <div>
-                            <p>search bar</p>
+                        <div className="flex-grow">
+                            <input 
+                                type="text" 
+                                placeholder="Cari Destinasi..." 
+                                className="border border-gray-300 rounded-md p-2 w-full"
+                            />
                         </div>                        
                         <div className="flex justify-end items-center mt-2">
                             <p className="mr-2">Sort:</p>
@@ -130,32 +134,6 @@ export default function KatalogWisata(){
                         </div>
                         <div className="flex flex-row justify-between gap-4 mt-4">
                             {[16, 17, 18, 19, 20].map((item) => (
-                                <div key={item} className="flex flex-col w-1/4 bg-white rounded-lg shadow-lg">
-                                    <img src={`https://picsum.photos/250/250?random=${item}`} alt={`Destinasi ${item}`} className="w-full h-48 rounded-t-lg" />
-                                    <div className="p-5">
-                                        <p className="text-sm">Destinasi ${item}</p>
-                                        <p className="text-sm font-semibold">Rp 500.000</p>
-                                        <p className="text-sm">Pantai/Laut</p>
-                                        <p className="text-sm">Bali</p>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-                        <div className="flex flex-row justify-between gap-4 mt-4">
-                            {[21, 22, 23, 24, 25].map((item) => (
-                                <div key={item} className="flex flex-col w-1/4 bg-white rounded-lg shadow-lg">
-                                    <img src={`https://picsum.photos/250/250?random=${item}`} alt={`Destinasi ${item}`} className="w-full h-48 rounded-t-lg" />
-                                    <div className="p-5">
-                                        <p className="text-sm">Destinasi ${item}</p>
-                                        <p className="text-sm font-semibold">Rp 500.000</p>
-                                        <p className="text-sm">Pantai/Laut</p>
-                                        <p className="text-sm">Bali</p>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-                        <div className="flex flex-row justify-between gap-4 mt-4">
-                            {[26, 27, 28, 29, 30].map((item) => (
                                 <div key={item} className="flex flex-col w-1/4 bg-white rounded-lg shadow-lg">
                                     <img src={`https://picsum.photos/250/250?random=${item}`} alt={`Destinasi ${item}`} className="w-full h-48 rounded-t-lg" />
                                     <div className="p-5">

@@ -12,9 +12,9 @@ export default function RootLayout({ children }) {
   return (
     <div>
       <Header/>
-      <WisatawanContainer>
-        {children}
-      </WisatawanContainer>
+        <WisatawanContainer>
+          {children}
+        </WisatawanContainer>
       <Footer/>
     </div>
   );
