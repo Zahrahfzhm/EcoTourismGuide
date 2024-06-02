@@ -1,7 +1,19 @@
 import Image from "next/image";
 import React from 'react';
+//import { useRouter } from 'next/navigation'; // Import useRouter from next/router for navigation
 
 export default function InfoDetailWisata() {
+    // const router = useRouter(); // Initialize useRouter hook
+
+    // // const handleNavigation = () => {
+    // //     router.push('/Wisatawan/Wisata/Lokasi'); // Function for navigation
+    // // }
+
+    // const handleNavigation = (event) => {
+    //     event.preventDefault()
+    //     router.push('/Wisatawan/Wisata/Lokasi');
+    // };
+
     return (
         <section className="bg-[#B9F4E0] min-h-screen">
             
@@ -22,7 +34,8 @@ export default function InfoDetailWisata() {
 
 
             <div className="flex-col space-y-6">
-                <div class="max-w-[1024px] mx-auto flex flex-col space-y-5 mt-6 ml-35 mr-35 text-black font-poppins">
+                
+                <div class="max-w-[1440px] mx-auto flex flex-col space-y-5 mt-6 ml-35 mr-35 text-black font-poppins">
                     <div>
                         <h1 className="text-3xl font-bold">Nama Wisata</h1>
                     </div>
@@ -98,54 +111,50 @@ export default function InfoDetailWisata() {
                             <div class="mb-6"></div>
                         </div>
                     </div>
-            </div>
 
-        <div className="flex justify-center gap-4 mx-16"> 
-            <div className="w-5/12 p-4 bg-white rounded-lg shadow-md mb-8">
-                <h3 className="text-xl font-semibold mb-2" style={{ color: 'black' }}>Review Wisata</h3>
-                <div className="flex items-center mb-4">
-                    <p className="font-medium text-4xl mr-2" style={{ color: 'gray' }}>4.5</p>
-                    <span className="text-yellow-500 text-4xl">★★★★☆</span>
+                    <div className="flex justify-center gap-5 mx-16"> 
+                        <div className="w-5/12 p-4 bg-white rounded-lg shadow-md mb-8">
+                            <h3 className="text-xl font-semibold mb-2" style={{ color: 'black' }}>Review Wisata</h3>
+                            <div className="flex items-center mb-4">
+                                <p className="font-medium text-4xl mr-2" style={{ color: 'gray' }}>4.5</p>
+                                <span className="text-yellow-500 text-4xl">★★★★☆</span>
+                            </div>
+                            <ul className="mt-2 space-y-4">
+                                <li style={{ color: 'black' }}>
+                                    <div style={{ display: 'flex', alignItems: 'center' }}>
+                                        <img src="https://via.placeholder.com/30" alt="Budi profile" style={{ width: '30px', height: '30px', borderRadius: '50%', marginRight: '10px' }} />
+                                        <span style={{ fontWeight: 'bold' }}>Budi (@budi123)</span>
+                                    </div>
+                                    <div style={{ fontSize: 'smaller' }}>"Tempat yang sangat indah! Lorem ipsum dolor sit amet, consectetur adipiscing elit"</div>
+                                </li>
+                                <li style={{ color: 'black' }}>
+                                    <div style={{ display: 'flex', alignItems: 'center' }}>
+                                        <img src="https://via.placeholder.com/30" alt="Siti profile" style={{ width: '30px', height: '30px', borderRadius: '50%', marginRight: '10px' }} />
+                                        <span style={{ fontWeight: 'bold' }}>Siti (@siti456)</span>
+                                    </div>
+                                    <div style={{ fontSize: 'smaller' }}>"Pelayanan memuaskan.Lorem ipsum dolor sit amet, consectetur adipiscing elit"</div>
+                                </li>
+                                <li style={{ color: 'black' }}>
+                                    <div style={{ display: 'flex', alignItems: 'center' }}>
+                                        <img src="https://via.placeholder.com/30" alt="Ahmad profile" style={{ width: '30px', height: '30px', borderRadius: '50%', marginRight: '10px' }} />
+                                        <span style={{ fontWeight: 'bold' }}>Ahmad (@ahmad789)</span>
+                                    </div>
+                                    <div style={{ fontSize: 'smaller' }}>"View yang luar biasa! Lorem ipsum dolor sit amet, consectetur adipiscing elit"</div>
+                                </li>
+                                
+                            </ul>
+                            <button className="bg-green-500 text-white rounded px-4 py-2 mt-2 hover:bg-green-600">Akses Review</button>
+                        </div>
+                        <div className="w-5/12 p-4 bg-white rounded-lg shadow-md mb-8">
+                            <h3 className="text-xl font-semibold mb-2" style={{ color: 'black' }}>Info Detail Lokasi Wisata</h3>
+                            <div className="mb-2">
+                                <img src="https://via.placeholder.com/400x200.png?text=Preview+Peta+Lokasi+Wisata" alt="Preview Peta Lokasi Wisata" style={{ width: '100%', height: 'auto' }} />
+                            </div>
+                            <p style={{ color: 'black' }}>Klik untuk melihat lokasi wisata di Google Maps.</p>
+                            <button className="bg-green-500 text-white rounded px-4 py-2 hover:bg-green-600" >Lihat Lokasi</button> {/* Button with onClick event to navigate */}
+                        </div>
+                    </div>
                 </div>
-                <ul className="mt-2 space-y-4">
-                    <li style={{ color: 'black' }}>
-                        <div style={{ display: 'flex', alignItems: 'center' }}>
-                            <img src="https://via.placeholder.com/30" alt="Budi profile" style={{ width: '30px', height: '30px', borderRadius: '50%', marginRight: '10px' }} />
-                            <span style={{ fontWeight: 'bold' }}>Budi (@budi123)</span>
-                        </div>
-                        <div style={{ fontSize: 'smaller' }}>"Tempat yang sangat indah! Lorem ipsum dolor sit amet, consectetur adipiscing elit"</div>
-                    </li>
-                    <li style={{ color: 'black' }}>
-                        <div style={{ display: 'flex', alignItems: 'center' }}>
-                            <img src="https://via.placeholder.com/30" alt="Siti profile" style={{ width: '30px', height: '30px', borderRadius: '50%', marginRight: '10px' }} />
-                            <span style={{ fontWeight: 'bold' }}>Siti (@siti456)</span>
-                        </div>
-                        <div style={{ fontSize: 'smaller' }}>"Pelayanan memuaskan.Lorem ipsum dolor sit amet, consectetur adipiscing elit"</div>
-                    </li>
-                    <li style={{ color: 'black' }}>
-                        <div style={{ display: 'flex', alignItems: 'center' }}>
-                            <img src="https://via.placeholder.com/30" alt="Ahmad profile" style={{ width: '30px', height: '30px', borderRadius: '50%', marginRight: '10px' }} />
-                            <span style={{ fontWeight: 'bold' }}>Ahmad (@ahmad789)</span>
-                        </div>
-                        <div style={{ fontSize: 'smaller' }}>"View yang luar biasa! Lorem ipsum dolor sit amet, consectetur adipiscing elit"</div>
-                    </li>
-                    
-                </ul>
-                <button className="bg-green-500 text-white rounded px-4 py-2 mt-2 hover:bg-green-600">Akses Review</button>
-            </div>
-            <div className="w-6/12 p-4 bg-white rounded-lg shadow-md mb-8">
-                <h3 className="text-xl font-semibold mb-2" style={{ color: 'black' }}>Info Detail Lokasi Wisata</h3>
-                <div className="mb-2">
-                    <img src="https://via.placeholder.com/400x200.png?text=Preview+Peta+Lokasi+Wisata" alt="Preview Peta Lokasi Wisata" style={{ width: '100%', height: 'auto' }} />
-                </div>
-                <p style={{ color: 'black' }}>Klik untuk melihat lokasi wisata di Google Maps.</p>
-                <button className="bg-green-500 text-white rounded px-4 py-2 hover:bg-green-600">Lihat Lokasi</button>
-            </div>
-            
-        </div>
-
-
-
         </section>
     );
 }
