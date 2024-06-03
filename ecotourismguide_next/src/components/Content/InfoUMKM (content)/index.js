@@ -1,14 +1,10 @@
-import MainContainer from "@/components/Container/DashboardAdmin/midContainer";
+export default function InfoUMKMContent() {
+    return (
+        <div className="flex flex-col mx-24">
+            <p className="pt-10 text-xl font-bold text-white">Informasi Tempat Wisata/UMKM</p>
 
-export default function InspeksiVerifikasi(){
-    return(
-        <MainContainer>
-            <p className="mx-6 mt-10 text-xl font-bold text-white">Inspeksi Registrasi</p>
-
-            <div className="flex flex-col mx-6 my-6 px-4 py-2 bg-white rounded-lg shadow-md">
+            <div className="mt-6 mb-12 px-4 py-2 bg-white rounded-lg shadow-md">
                 <p className="mt-1 text-base font-semibold text-balance">id destinasi</p>
-                <p className="text-xs font-normal text-slate-500 text-pretty">Dikirim pada tanggal dd/mm/yy, jam:mm</p>
-
                 <div className="flex gap-6 mt-3">
                     <div className="">
                         <img src="https://picsum.photos/250/250" alt="Destinasi Wisata" className="rounded-lg shadow-lg" />
@@ -43,22 +39,12 @@ export default function InspeksiVerifikasi(){
                             <label className="block mt-4 text-sm font-medium text-gray-700">Harga dan tarif</label>
                             <input type="text" className="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" placeholder="e.g Rp500.000" disabled/>
 
-                           
-                            <label className="block mt-4 text-sm font-medium text-gray-700">Status Verifikasi</label>
-                            <select className="block w-full mt-1 px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
-                                <option>Menunggu Konfirmasi</option>
-                                <option>Diterima</option>
-                                <option>Ditolak</option>
-                            </select>
-
-                            <label className="block mt-4 text-sm font-medium text-gray-700">Keterangan</label>
-                            <textarea className="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" rows="3" placeholder="Tambahkan keterangan tambahan di sini"></textarea>
-
-                            <button type="submit" className="my-6 px-4 py-2 bg-[#1EC28B] text-white rounded-lg shadow hover:bg-[#17a77e]">Konfirmasi</button>
+                            <button type="submit" className="my-6 px-4 py-2 bg-[#1EC28B] text-white rounded-lg shadow hover:bg-[#17a77e]">Edit</button>
                         </form>
                     </div>
                 </div>
+               
             </div>
-        </MainContainer>
-    );
+        </div>
+    )
 }

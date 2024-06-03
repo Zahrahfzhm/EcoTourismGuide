@@ -7,6 +7,7 @@ function LoginForm() {
   const [nama_pelaku, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const router = useRouter();
+  const [error, setError] = useState('');
 
   const handleLogin = async (event) => {
     event.preventDefault();
@@ -20,12 +21,14 @@ function LoginForm() {
             body: JSON.stringify(data)
         }
         )
-        const loginForm = await response.json();
-        console.log({loginForm})
-        if (loginForm.isAuthenticated) {
-            router.push('/UMKM/Dashboard'); // Redirect to a dashboard page or some protected page
+        const user = await response.json();
+
+        if (response.ok) {
+            sessionStorage.setItem('data', JSON.stringify (user));
+            console.log('data stored:', user);
+            router.push('/UMKM/Dashboard');
         } else {
-            setError('Invalid credentials');
+           setError(loginForm.message);
         }
 
     } catch (error) {

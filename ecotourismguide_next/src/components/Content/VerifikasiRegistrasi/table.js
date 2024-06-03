@@ -1,6 +1,15 @@
+"use client"
+
+import { useRouter } from 'next/navigation';
 import MainContainer from "@/components/Container/DashboardAdmin/midContainer";
 
 export default function TabelVerifikasi(){
+    const router = useRouter();
+
+    const handleClickTable = (event) => {
+        event.preventDefault()
+        router.push('/DinasPariwisata/Verifikasi/Inspeksi');
+    };
     return(
         <MainContainer>
             <p className="mx-6 mt-10 text-xl font-bold text-white">Daftar proposal</p>
@@ -65,7 +74,7 @@ export default function TabelVerifikasi(){
                                 <td className="px-4 py-2 text-center">01-01-2022</td>
                                 <td className="px-4 py-2 text-center">Menunggu konfirmasi</td>
                                 <td className="px-4 py-2 text-center">
-                                    <button className="bg-[#FF8345] hover:bg-[#c17a3a] text-white font-medium py-2 px-2 rounded">
+                                    <button className="bg-[#FF8345] hover:bg-[#c17a3a] text-white font-medium py-2 px-2 rounded" onClick={handleClickTable}>
                                         Periksa
                                     </button>
                                 </td>
@@ -84,7 +93,7 @@ export default function TabelVerifikasi(){
                                 <td className="px-4 py-2 text-center">15-02-2022</td>
                                 <td className="px-4 py-2 text-center">Diterima</td>
                                 <td className="px-4 py-2 text-center">
-                                    <button className="bg-[#FF8345] hover:bg-[#c17a3a] text-white font-medium py-2 px-2 rounded">
+                                    <button className="bg-[#FF8345] hover:bg-[#c17a3a] text-white font-medium py-2 px-2 rounded" onClick={handleClickTable}>
                                         Periksa
                                     </button>
                                 </td>
@@ -103,7 +112,7 @@ export default function TabelVerifikasi(){
                                 <td className="px-4 py-2 text-center">20-03-2022</td>
                                 <td className="px-4 py-2 text-center">Ditolak / dikembalikan</td>
                                 <td className="px-4 py-2 text-center">
-                                    <button className="bg-[#FF8345] hover:bg-[#c17a3a] text-white font-medium py-2 px-2 rounded">
+                                    <button className="bg-[#FF8345] hover:bg-[#c17a3a] text-white font-medium py-2 px-2 rounded" onClick={handleClickTable}>
                                         Periksa
                                     </button>
                                 </td>

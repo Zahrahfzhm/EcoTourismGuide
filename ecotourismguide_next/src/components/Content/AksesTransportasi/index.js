@@ -26,8 +26,8 @@ export default function AksesTransportasi(){
 
 
     return(
-        <div class="flex justify-center items-center px-16 py-20 bg-white max-md:px-5">
-            <div class="flex flex-col items-center px-20 pt-8 pb-14 mt-44 max-w-full rounded-xl bg-zinc-300 w-[459px] max-md:px-5 max-md:mt-10">
+        <div class="flex justify-center items-center px-16 py-20 bg-gradient-to-b from-[#1679AB] to-[#B9F4E0] max-md:px-5">
+            <div class="flex flex-col items-center px-20 pt-8 pb-14 mt-44 max-w-full rounded-xl bg-gradient-to-b from-[#1679AB] to-[#B9F4E0] w-[459px] max-md:px-5 max-md:mt-10">
                 <div class="text-3xl font-bold text-black">Akses Transportasi</div>
                 <div class="flex gap-5 justify-between mt-12 max-md:mt-10">
                 <div class="flex flex-col text-sm font-bold text-right whitespace-nowrap text-zinc-400">
