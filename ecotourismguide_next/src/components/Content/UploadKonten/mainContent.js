@@ -33,6 +33,7 @@ export default function MainContent() {
             method: 'PUT',
             body: file,
         });
+
     };
 
     return (
@@ -59,11 +60,11 @@ export default function MainContent() {
                                 <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/32e6beb5578ac8f3f5d7a7f31cfcc6199cd78cca675637a8c7367a42d450e60a?apiKey=2b13a1e2364a4d3f8744de572dd64729&" alt="" className="self-center w-12 aspect-square" />
                                 <p className="mt-6 text-sm">Select a file or drag and drop here</p>
                                 <p className="mt-3 text-xs text-black text-opacity-40">
-                                    {file?.name ? file.name : 'PNG, file size no more than ...'}
+                                    {file?.name ? file.name : 'PNG, JPG, JPEG'}
                                 </p>
                                 <label className="justify-center self-center px-4 py-3 mt-6 text-xs uppercase bg-white rounded-md border border-solid border-zinc-300 cursor-pointer">
                                     <span>Select file</span>
-                                    <input type="file" className="hidden" accept=".png" onChange={handleFileChange} />
+                                    <input type="file" className="hidden" accept=".png, .jpg, .jpeg" onChange={handleFileChange} />
                                 </label>
                             </div>
                             <p className="text-xs max-md:max-w-full ml-3">Upload hanya foto</p>

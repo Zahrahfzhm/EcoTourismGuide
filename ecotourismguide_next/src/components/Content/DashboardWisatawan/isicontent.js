@@ -9,7 +9,6 @@ export default function DashboardWisatawanIsiContent() {
   <section class="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
       <figure class=""> 
         <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/2e19ce13071f915bb6ba98045944f458eaddb0250eb48b5df6683d6e56c70855?apiKey=59541bf2346a4f44991d05930261be7f&" alt="" class="flex justify-center ml-64 item-center absolute top-72 w-2/3 " /> 
-        {/* <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/383c4279b5aa0fe9dad4f23a11d44cd932bef2b47c40310df7cc903f8bd25501?apiKey=59541bf2346a4f44991d05930261be7f&" alt="Scenic view of Indonesian landscape" class="w-full aspect-[2.44] max-md:max-w-full" />  */}
       </figure> 
   </section>
   <main class="self-center mt-32 w-full max-w-[1050px] max-md:mt-10 max-md:max-w-full"> 
