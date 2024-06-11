@@ -1,6 +1,45 @@
+'use client'
+
+import { useState, useEffect } from 'react';
 import Cardconten from "@/components/Container/DashboardWisatawan/cardcontent";
 
+const chunkArray = (array, size) => {
+    const result = [];
+    for (let i = 0; i < array.length; i += size) {
+        result.push(array.slice(i, i + size));
+    }
+    return result;
+};
+
 export default function DashboardWisatawanlistContent() {
+    const [contents, setContents] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
+
+    useEffect(() => {
+        const fetchContents = async () => {
+            try {
+                const response = await fetch('/api/v1/getContent'); 
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                const data = await response.json();
+                setContents(data);
+            } catch (error) {
+                setError(error.message);
+            } finally {
+                setLoading(false);
+            }
+        };
+
+        fetchContents();
+    }, []);
+
+    if (loading) return <p>Loading...</p>;
+    if (error) return <p>Error: {error}</p>;
+
+    const chunkedContents = chunkArray(contents, 2);
+
     return (
         <div className="flex flex-col px-10 pt-2 pb-10 w-full max-md:px-5 max-md:max-w-full">
             <div className="flex items-center justify-center pb-10 ">
@@ -116,6 +155,25 @@ export default function DashboardWisatawanlistContent() {
                     </article>
                 </div>
             </section>
+            {chunkedContents.map((chunk, index) => (
+                <section key={index} className="self-center mt-4 w-full max-w-[1350px] max-md:max-w-full">
+                    <div className="flex gap-10 max-md:flex-col max-md:gap-0">
+                        {chunk.map((content, idx) => (
+                            <article key={idx} className="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
+                                <Cardconten
+                                    imageSrc={content.url}
+                                    title={content.Judul}
+                                    description={content.Caption}
+                                    likes={content.likes || 'N/A'}
+                                    views={content.views || 'N/A'}
+                                    time={content.time || 'N/A'}
+                                    link={content.link || '#'}
+                                />
+                            </article>
+                        ))}
+                    </div>
+                </section>
+            ))}
         </div>
     );
 }
