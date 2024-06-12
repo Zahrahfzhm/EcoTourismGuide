@@ -3,6 +3,7 @@
 import Image from "next/image";
 import React, { useState } from 'react';
 import AksesTransportasi from "../../AksesTransportasi";
+import { useRouter } from 'next/navigation';
 
 export default function InfoDetailWisata() {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -13,6 +14,23 @@ export default function InfoDetailWisata() {
 
     const handleCloseModal = () => {
         setIsModalOpen(false);
+    };
+
+    const router = useRouter();
+
+    const handleClickhotel = (event) => {
+        event.preventDefault()
+        router.push('/Wisatawan/ProfilDaerah/DaerahWisata/Hotel');
+    };
+
+    const handleClickLocation = (event) => {
+        event.preventDefault()
+        router.push('/Wisatawan/Wisata/Lokasi');
+    };
+
+    const handleClickReview = (event) => {
+        event.preventDefault()
+        router.push('/Wisatawan/Rating/Review');
     };
 
     const descWisata = ["Berkunjung ke Taman Margasatwa Ragunan berarti memasuki sebuah hutan tropis mini, di dalamnya terdapat keanekaragaman hayati yang memiliki nilai konservasi tinggi dan menyimpan harapan untuk masa depan. Sebuah kebun binatang modern menampilkan suatu system ekologi yang lengkap yang bias menjadi satu sumber ilmu pengetahuan yang akan mengawali langkah pelestarian kehidupan alam liar. Singkatnya, kebuna binatang adalah “Kapal Nuh” kita dalam menghadapi bencana dan kerusakan alam yang akhir-akhir ini sering terjadi. Bila nanti sudah tidak ada lagi hutan di bumi ini, paling tidak masih ada contoh-contoh makhluk yang menakjubkan ini di kebun binatang, entah itu telah berwujud satwa ataupun masih berbentuk embrio, sel atau DNA."];
@@ -102,9 +120,7 @@ export default function InfoDetailWisata() {
                             <h3 className="text-5xl font-extrabold">Lokasi Wisata</h3>
                             <br />
                             <h3 className="text-lg text-justify">Jl. Harsono RM No.1, Ragunan, Ps. Minggu, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta</h3>
-                            <a href="http://localhost:3000/Wisatawan/Wisata/Lokasi">
-                                <button className="bg-[#1EC28B] text-white rounded-full px-8 py-4 mt-[50px] hover:shadow-lg">Lihat Detail Peta</button>
-                            </a>
+                            <button className="bg-[#1EC28B] text-white rounded-full px-8 py-4 mt-[50px] hover:shadow-lg" onClick={handleClickLocation}>Lihat Detail Lokasi</button>
                         </div>
                     </div>
                 </div>
@@ -144,15 +160,13 @@ export default function InfoDetailWisata() {
                                     <div style={{ fontSize: 'larger' }}>"Alternatif hiburan ramah anak dan ramah kantong emaknya. Dateng sabtu tgl 20 april dipenghujung libur lebaran, datang jam 10 dan masih agak sepi."</div>
                                 </li>
                             </ul>
-                            <a href="http://localhost:3000/Wisatawan/Rating/Review">
-                                <button className="bg-[#1EC28B] text-white rounded-full px-8 py-4 mt-[50px] mb-[50px] hover:shadow-lg">Tambah Penilaian</button>
-                            </a>
+                            <button className="bg-[#1EC28B] text-white rounded-full px-8 py-4 mt-[50px] mb-[50px] hover:shadow-lg" onClick={handleClickReview}>Tambah Penilaian</button>
                         </div>
                         <div className="col-span-1 mt-[30px]">
                             <div className="flex flex-col space-y-4">
                                 <button className="bg-[#164E63] text-white px-8 py-4 rounded-md hover:bg-[#44849D] hover:shadow-lg" onClick={handleOpenModal}>Akses Transportasi</button>
                                 <button className="bg-[#164E63] text-white px-8 py-4 rounded-md hover:bg-[#44849D] hover:shadow-lg">Informasi Kuliner</button>
-                                <button className="bg-[#164E63] text-white px-8 py-4 rounded-md hover:bg-[#44849D] hover:shadow-lg">Informasi Penginapan</button>
+                                <button className="bg-[#164E63] text-white px-8 py-4 rounded-md hover:bg-[#44849D] hover:shadow-lg" onClick={handleClickhotel}>Informasi Penginapan</button>
                             </div>
                         </div>
                     </div>
