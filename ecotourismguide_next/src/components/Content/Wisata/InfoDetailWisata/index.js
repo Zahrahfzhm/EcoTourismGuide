@@ -3,6 +3,7 @@
 import Image from "next/image";
 import React, { useState } from 'react';
 import AksesTransportasi from "../../AksesTransportasi";
+import { useRouter } from 'next/navigation';
 
 export default function InfoDetailWisata() {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -13,6 +14,12 @@ export default function InfoDetailWisata() {
 
     const handleCloseModal = () => {
         setIsModalOpen(false);
+    };
+    const router = useRouter();
+
+    const handleClickhotel = (event) => {
+        event.preventDefault()
+        router.push('/Wisatawan/ProfilDaerah/DaerahWisata/Hotel');
     };
 
     return (
@@ -100,8 +107,15 @@ export default function InfoDetailWisata() {
                     </div>
                     <div>
                         <h2 className="text-3xl font-semibold">
-                            <button className="bg-blue-500 text-white px-4 py-2 rounded" onClick={handleOpenModal}>
+                            <button className=" py-2 rounded" onClick={handleOpenModal}>
                                 Akses Transportasi
+                            </button>
+                        </h2>
+                    </div>
+                    <div>
+                        <h2 className="text-3xl font-semibold">
+                            <button className=" py-2 rounded" onClick={handleClickhotel}>
+                                Akses Hotel
                             </button>
                         </h2>
                     </div>
