@@ -1,20 +1,4 @@
-"use client"
-
-import { useEffect, useState } from 'react';
-
 export default function DashboardUMKMContent(){
-    const [nama, setNama] = useState('');
-
-    useEffect(() => {
-        const userDataFromStorage = sessionStorage.getItem('data');
-        if (userDataFromStorage) {
-            const parsedData = JSON.parse(userDataFromStorage);
-            setNama(parsedData.user.nama_pelaku);
-        } else {
-            console.error('User name not found in sessionStorage');
-        }
-    }, []);
-
     return(
         <div className="flex flex-col mx-24">
             <p className="pt-10 text-xl font-bold text-white">Dashboard UMKM</p>
