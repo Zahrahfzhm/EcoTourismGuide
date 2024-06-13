@@ -261,13 +261,13 @@ export default function DashboardWisatawanContent() {
                 </section>
                 <section class="mt-10 max-md:mt-10 max-md:max-w-full">
                 <div className="flex gap-10 max-md:flex-col max-md:gap-5">
-                    <a href="http://localhost:3000/Wisatawan/ProfilDaerah/DaerahWisata" className="w-6/12 max-md:w-full">
+                    <a href="http://localhost:3000/Wisatawan/ProfilDaerah/DaerahWisata/jakarta" className="w-6/12 max-md:w-full">
                         <div className="relative flex items-center justify-center overflow-hidden bg-green-200 rounded-lg min-h-[226px] max-md:min-w-full">
                             <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/a5bf3417699cfc25fe2fb0835f9fc5811689af2ae97e5228d607689836831a4d?apiKey=59541bf2346a4f44991d05930261be7f&" alt="Surabaya" className="absolute inset-0 object-cover w-full h-full" />
-                            <span className="relative z-10 px-4 py-2 text-5xl font-semibold text-white">Surabaya</span>
+                            <span className="relative z-10 px-4 py-2 text-5xl font-semibold text-white">Jakarta</span>
                         </div>
                     </a>
-                    <a href="http://localhost:3000/Wisatawan/ProfilDaerah/DaerahWisata" className="w-6/12 max-md:w-full">
+                    <a href="http://localhost:3000/Wisatawan/ProfilDaerah/DaerahWisata/bandung" className="w-6/12 max-md:w-full">
                         <div className="relative flex items-center justify-center overflow-hidden bg-green-200 rounded-lg min-h-[226px] max-md:min-w-full">
                             <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/b550acaeba7eeda0b6b16a2542169099f8f31947e316d59499ed399f98ea7d52?apiKey=59541bf2346a4f44991d05930261be7f&" alt="Bandung" className="absolute inset-0 object-cover w-full h-full" />
                             <span className="relative z-10 px-4 py-2 text-5xl font-semibold text-white">Bandung</span>
@@ -277,13 +277,13 @@ export default function DashboardWisatawanContent() {
                 </section>
                 <section class="mt-10 max-md:mt-10 max-md:max-w-full">
                 <div className="flex gap-10 max-md:flex-col max-md:gap-5">
-                    <a href="http://localhost:3000/Wisatawan/ProfilDaerah/DaerahWisata" className="w-6/12 max-md:w-full">
+                    <a href="http://localhost:3000/Wisatawan/ProfilDaerah/DaerahWisata/surabaya" className="w-6/12 max-md:w-full">
                         <div className="relative flex items-center justify-center overflow-hidden bg-green-200 rounded-lg min-h-[226px] max-md:min-w-full">
                             <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/afb912cf50b4158faab1ce019f566f77592563708fdb4ab3f64bda6cd0128352?apiKey=59541bf2346a4f44991d05930261be7f&&" alt="Surabaya" className="absolute inset-0 object-cover w-full h-full" />
                             <span className="relative z-10 px-4 py-2 text-5xl font-semibold text-white">Surabaya</span>
                         </div>
                     </a>
-                    <a href="http://localhost:3000/Wisatawan/ProfilDaerah/DaerahWisata" className="w-6/12 max-md:w-full">
+                    <a href="http://localhost:3000/Wisatawan/ProfilDaerah/DaerahWisata/madiun" className="w-6/12 max-md:w-full">
                         <div className="relative flex items-center justify-center overflow-hidden bg-green-200 rounded-lg min-h-[226px] max-md:min-w-full">
                             <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/2371324036005988b1aed1ea4e691ccc93fea6240f5d3744362872523cacf6e0?apiKey=59541bf2346a4f44991d05930261be7f&" alt="Bandung" className="absolute inset-0 object-cover w-full h-full" />
                             <span className="relative z-10 px-4 py-2 text-5xl font-semibold text-white">Madiun</span>
@@ -293,7 +293,7 @@ export default function DashboardWisatawanContent() {
                 </section>
                 <section class="mt-10 max-md:mt-10 max-md:max-w-full">
                 <div className="flex gap-10 max-md:flex-col max-md:gap-5">
-                    <a href="hhttp://localhost:3000/Wisatawan/ProfilDaerah/DaerahWisata" className="w-6/12 max-md:w-full">
+                    <a href="http://localhost:3000/Wisatawan/ProfilDaerah/DaerahWisata/banten" className="w-6/12 max-md:w-full">
                         <div className="relative flex items-center justify-center overflow-hidden bg-green-200 rounded-lg min-h-[226px] max-md:min-w-full">
                             <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/c790467c7f2142e0d2c2ee2f36066e037bb0b35632f1e93a82f75b1b14aa0fa4?apiKey=59541bf2346a4f44991d05930261be7f&" alt="Surabaya" className="absolute inset-0 object-cover w-full h-full" />
                             <span className="relative z-10 px-4 py-2 text-5xl font-semibold text-white">Banten</span>
