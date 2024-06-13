@@ -1,7 +1,7 @@
-export default function EditInfoUMKMInfoUMKMContent() {
+export default function ApplyUMKMContent() {
     return (
         <div className="flex flex-col mx-24">
-            <p className="pt-10 text-xl font-bold text-white">Edit Tempat Wisata/UMKM</p>
+            <p className="pt-10 text-xl font-bold text-white">Registrasi Tempat Wisata/UMKM</p>
 
             <div className="mt-6 mb-12 px-4 py-2 bg-white rounded-lg shadow-md">
                 <p className="mt-1 text-base font-semibold text-balance">id destinasi</p>

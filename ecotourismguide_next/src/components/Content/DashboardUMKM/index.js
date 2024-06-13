@@ -20,7 +20,7 @@ export default function DashboardUMKMContent(){
             <p className="pt-10 text-xl font-bold text-white">Dashboard UMKM</p>
 
             <div className="mt-6 mb-12 px-4 py-2 bg-white rounded-lg shadow-md">
-                <p className="mt-1 text-base font-semibold text-balance">Selamat Datang di <span className="text-[#1EC28B]">EcoTourismGuide</span>, apa yang baru hari ini?</p>
+                <p className="mt-1 text-base font-semibold text-balance">Selamat Datang {nama} di <span className="text-[#1EC28B]">EcoTourismGuide</span>, apa yang baru hari ini?</p>
                 <p className="mt-1 text-xs font-normal text-slate-500 text-pretty">Silahkan periksa kebutuhan anda</p>
 
                 <div className="flex flex-col">
