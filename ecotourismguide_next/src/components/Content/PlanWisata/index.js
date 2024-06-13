@@ -5,7 +5,7 @@ export default function PlanWisata() {
     return (
         <section className="bg-[#B9F4E0] min-h-screen">
         <div className="max-w-[1440px] mx-auto p-6">
-            <h1 className="text-3xl font-bold text-center mb-6 text-black">Rekomendasi Plan Wisata</h1>
+            <h1 className="text-5xl font-extrabold text-center mt-[10px] mb-[30px] text-black">Rekomendasi Plan Wisata</h1>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <div className="bg-white rounded-lg shadow-lg p-5 h-[600px] flex flex-col justify-between">
                     <div>
@@ -22,7 +22,7 @@ export default function PlanWisata() {
                 </div>
                 <div className="bg-white rounded-lg shadow-lg p-5 h-[600px] flex flex-col justify-between">
                     <div>
-                        <Image src="/Lampung.jpg" alt="Arung Jeram" width={700} height={400} className="w-full object-cover rounded-t-lg"/>
+                        <Image src="/Gunung-Bromo.jpg" alt="Arung Jeram" width={700} height={400} className="w-full object-cover rounded-t-lg"/>
                         <h2 className="text-xl font-semibold mt-2 text-black">Paket Petualangan</h2>
                         <p className="text-gray-600">Rasakan adrenalin dengan aktivitas outdoor yang menantang.</p>
                         <ul className="list-disc list-inside ml-4 mt-2">
@@ -33,9 +33,10 @@ export default function PlanWisata() {
                     </div>
                     <button className="bg-green-500 text-white rounded px-4 py-2 hover:bg-green-600">Lihat Detail</button>
                 </div>
+
                 <div className="bg-white rounded-lg shadow-lg p-5 h-[600px] flex flex-col justify-between">
                     <div>
-                        <Image src="/Malang.jpg" alt="Spa Bali" width={700} height={400} className="w-full object-cover rounded-t-lg"/>
+                        <Image src="/Malang.jpg" alt="Arung Jeram" width={700} height={400} className="w-full object-cover rounded-t-lg"/>
                         <h2 className="text-xl font-semibold mt-2 text-black">Paket Relaksasi</h2>
                         <p className="text-gray-600">Lepaskan penat dengan kegiatan yang menenangkan dan memanjakan.</p>
                         <ul className="list-disc list-inside ml-4 mt-2">
@@ -72,12 +73,18 @@ export default function PlanWisata() {
                     </div>
                     <button className="bg-green-500 text-white rounded px-4 py-2 hover:bg-green-600">Lihat Detail</button>
                 </div>
-                <div className="bg-transparent border-2 border-dashed border-white rounded-lg shadow-lg p-5 h-[600px] flex flex-col justify-between items-center">
+                <div className="bg-white rounded-lg shadow-lg p-5 h-[600px] flex flex-col justify-between">
                     <div>
-                        <h2 className="text-5xl font-semibold text-[#2B2945]">+</h2>
-                        <p className="text-[#2B2945] mt-2">Coba buat plan baru disini</p>
+                        <Image src="/Bali.png" alt="Paket Liburan Bali" width={700} height={400} className="w-full object-cover rounded-t-lg"/>
+                        <h2 className="text-xl font-semibold mt-2 text-black">Paket Liburan Bali</h2>
+                        <p className="text-gray-600">Menikmati keindahan alam dan budaya Bali dengan paket liburan yang lengkap.</p>
+                        <ul className="list-disc list-inside ml-4 mt-2">
+                            <li>Wisata ke Pantai Kuta</li>
+                            <li>Menikmati sunset di Uluwatu</li>
+                            <li>Kunjungan ke Tirtha Empul</li>
+                        </ul>
                     </div>
-                    <button className="bg-[#2B2945] text-white rounded px-4 py-2 hover:bg-[#1F1E37] bg-opacity-75 hover:bg-opacity-100">Tambah Plan</button>
+                    <button className="bg-green-500 text-white rounded px-4 py-2 hover:bg-green-600">Lihat Detail</button>
                 </div>
             </div>
         </div>
