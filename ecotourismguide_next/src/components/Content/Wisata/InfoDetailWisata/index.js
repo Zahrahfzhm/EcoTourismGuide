@@ -176,14 +176,19 @@ export default function DetailKotaTuaJakarta() {
 
             {isModalOpen && (
                 <div className="fixed inset-0 bg-gray-600 bg-opacity-50 flex items-center justify-center">
-                    <div className="bg-white p-6 rounded-lg shadow-lg max-w-md w-full relative">
-                        <button className="absolute top-0 right-0 mt-4 mr-4 text-gray-600 text-2xl" onClick={handleCloseModal}>
+                    <div className="inline-flex relative rounded-lg shadow-lg  bg-gradient-to-b from-[#1679AB] to-[#B9F4E0]">
+                        <button className="absolute top-0 right-0 text-white text-2xl" onClick={handleCloseModal}>
                             &times;
                         </button>
-                        <AksesTransportasi />
+                        <div className="p-4">
+                            <AksesTransportasi />
+                        </div>
                     </div>
                 </div>
-            )}
+
+
+
+                            )}
         </section>
     );
 }

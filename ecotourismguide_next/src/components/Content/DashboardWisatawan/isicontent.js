@@ -11,7 +11,7 @@ export default function DashboardWisatawanIsiContent() {
         <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/2e19ce13071f915bb6ba98045944f458eaddb0250eb48b5df6683d6e56c70855?apiKey=59541bf2346a4f44991d05930261be7f&" alt="" class="flex justify-center ml-64 item-center absolute top-72 w-2/3 " /> 
       </figure> 
   </section>
-  <main class="self-center mt-32 w-full max-w-[1050px] max-md:mt-10 max-md:max-w-full"> 
+  <main class="self-center mt-56 w-full max-w-[1050px] max-md:mt-10 max-md:max-w-full"> 
     <article class="flex gap-5 max-md:flex-col max-md:gap-0"> 
       <section class="flex flex-col w-9/12 max-md:ml-0 max-md:w-full"> 
         <div class="flex flex-col grow px-5 text-zinc-800 max-md:mt-10 max-md:max-w-full"> 
