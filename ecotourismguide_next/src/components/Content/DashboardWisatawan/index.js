@@ -197,7 +197,7 @@ export default function DashboardWisatawanContent() {
                         imageSrc="https://cdn.builder.io/api/v1/image/assets/TEMP/4b3d60034c176b78267df56396683e9d1986389d6d4587c2edbbefb1ae14a511?apiKey=59541bf2346a4f44991d05930261be7f&"
                         title="Kota Tua Jakarta"
                         description="Area bersejarah dengan Museum Fatahillah, Museum Wayang, dan bangunan kolonial."
-                        link="http://localhost:3000/Wisatawan/Wisata/Detail/KotaTua"
+                        link="/Wisatawan/Wisata/Detail/KotaTua"
                     />
                 </div>
             </section>
@@ -207,7 +207,7 @@ export default function DashboardWisatawanContent() {
                         imageSrc="https://cdn.builder.io/api/v1/image/assets/TEMP/6cb910e5122a0cf80630e2ce8c2ce80dce2a83b2723267f83a255eeb5ebc8b77?apiKey=59541bf2346a4f44991d05930261be7f&"
                         title="Glodok (Chinatown)"
                         description="Area pecinan dengan pasar tradisional, toko obat Tionghoa, dan kuil-kuil bersejarah."
-                        link="http://localhost:3000/Wisatawan/Wisata/Detail/Chinatown"
+                        link="/Wisatawan/Wisata/Detail/Chinatown"
                     />
                     <Cardwisata
                         imageSrc="https://cdn.builder.io/api/v1/image/assets/TEMP/35deb543888a3e01a358388d63f777b00d11a67c60c16517d0faafc7f6ea97d4?apiKey=59541bf2346a4f44991d05930261be7f&"
@@ -241,7 +241,7 @@ export default function DashboardWisatawanContent() {
                         imageSrc="https://cdn.builder.io/api/v1/image/assets/TEMP/4b3d60034c176b78267df56396683e9d1986389d6d4587c2edbbefb1ae14a511?apiKey=59541bf2346a4f44991d05930261be7f&"
                         title="Kota Tua Jakarta"
                         description="Area bersejarah dengan Museum Fatahillah, Museum Wayang, dan bangunan kolonial."
-                        link="http://localhost:3000/Wisatawan/Wisata/Detail/KotaTua"
+                        link="/Wisatawan/Wisata/Detail/KotaTua"
                     />
                 </div>
             </section>
