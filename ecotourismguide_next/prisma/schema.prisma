@@ -78,13 +78,6 @@ model Pelaku_wisata{
   id                        Int @id @unique @default(autoincrement())
   nama_pelaku               String @unique @db.VarChar(255)
   password                  String @db.VarChar(255)
-  nama_wisata               String @db.VarChar(255) @default("")
-  alamat                    String @db.VarChar(255) @default("")
-  Deskripsi_wisata          String @db.VarChar(255) @default("")
-  no_telpon                 String @db.VarChar(255) @default("")
-  email                     String @db.VarChar(255) @default("")
-  fasilitas                 String @db.VarChar(255) @default("")
-  tarif                     String @db.VarChar(255) @default("")
   destinasi                 Destinasi[]
   statusreg                 StatusReg[]
 }

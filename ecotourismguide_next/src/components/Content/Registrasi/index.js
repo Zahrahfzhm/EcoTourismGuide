@@ -1,30 +1,18 @@
 "use client"
 
 import React, { useState } from 'react';
+import { useRouter } from 'next/navigation';
 
 export default function RegistrasiForm() {
   const [nama_pelaku, setNama] = useState('');
   const [password, setPassword] = useState('');
-  const [nama_wisata, setNamaWisata] = useState('');
-  const [alamat, setAlamat] = useState('');
-  const [Deskripsi_wisata, setDeskripsi] = useState('');
-  const [no_telpon, setNoTelepon] = useState('');
-  const [email, setEmail] = useState('');
-  const [fasilitas, setFasilitas] = useState('');
-  const [tarif, setTarif] = useState('');
+  const router = useRouter();
 
   const handleRegistrasi = async (event) => {
     event.preventDefault();
     const data = {
       nama_pelaku,
       password,
-      nama_wisata,
-      alamat,
-      Deskripsi_wisata,
-      no_telpon,
-      email,
-      fasilitas,
-      tarif
     };
 
     try {
@@ -37,6 +25,11 @@ export default function RegistrasiForm() {
       });
       const result = await response.json();
       console.log(result);
+      if (response.ok) {
+        router.push('/login');
+    } else {
+       setError(loginForm.message);
+    }
     } catch (error) {
       console.error('Registrasi error:', error);
     }
@@ -50,13 +43,6 @@ export default function RegistrasiForm() {
           {[
             { label: 'Nama', type: 'text', id: 'nama', value: nama_pelaku, onChange: setNama },
             { label: 'Password', type: 'password', id: 'password', value: password, onChange: setPassword },
-            { label: 'Nama Wisata', type: 'text', id: 'namaWisata', value: nama_wisata, onChange: setNamaWisata },
-            { label: 'Alamat', type: 'text', id: 'alamat', value: alamat, onChange: setAlamat },
-            { label: 'Deskripsi', type: 'textarea', id: 'deskripsi', value: Deskripsi_wisata, onChange: setDeskripsi },
-            { label: 'No Telepon', type: 'text', id: 'noTelepon', value: no_telpon, onChange: setNoTelepon },
-            { label: 'Email', type: 'email', id: 'email', value: email, onChange: setEmail },
-            { label: 'Fasilitas', type: 'text', id: 'fasilitas', value: fasilitas, onChange: setFasilitas },
-            { label: 'Tarif', type: 'number', id: 'tarif', value: tarif, onChange: setTarif }
           ].map((input, index) => (
             <div key={index} className="form-group mb-4">
               <label htmlFor={input.id} className="block text-gray-700 text-sm font-bold mb-2">{input.label}:</label>
@@ -88,5 +74,6 @@ export default function RegistrasiForm() {
     </div>
   );
 }
+
 
 

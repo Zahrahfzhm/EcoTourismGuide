@@ -37,33 +37,30 @@ function LoginForm() {
   };
 
   return (
-    <div className="login-container bg-blue-100 p-8 rounded-lg shadow-lg">
-      <form onSubmit={handleLogin} className="login-form">
-        <div className="form-group mb-4">
-          <label htmlFor="username" className="block text-gray-700 text-sm font-bold mb-2">Username:</label>
-          <input
-            type="text"
-            id="username"
-            name="username"
-            value={nama_pelaku}
-            onChange={(e) => setUsername(e.target.value)}
-            required
-          />
-        </div>
-        <div className="form-group mb-6">
-          <label htmlFor="password" className="block text-gray-700 text-sm font-bold mb-2">Password:</label>
-          <input
-            type="password"
-            id="password"
-            name="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            required
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
-          />
-        </div>
-        <button type="submit" className="login-button bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Login</button>
-      </form>
+    <div className="mx-36 mb-36">
+      <p className="pt-10 text-xl font-bold">Form Login</p>
+      <div className="login-container flex flex-col mt-6 px-4 py-2 bg-white rounded-lg shadow-md">
+        <form onSubmit={handleLogin} className="login-form">
+          {[
+            { label: 'Username', type: 'text', id: 'username', value: nama_pelaku, onChange: setUsername },
+            { label: 'Password', type: 'password', id: 'password', value: password, onChange: setPassword },
+          ].map((input, index) => (
+            <div key={index} className="form-group mb-4">
+              <label htmlFor={input.id} className="block text-gray-700 text-sm font-bold mb-2">{input.label}:</label>
+              <input
+                type={input.type}
+                id={input.id}
+                name={input.id}
+                value={input.value}
+                onChange={(e) => input.onChange(e.target.value)}
+                required
+                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              />
+            </div>
+          ))}
+          <button type="submit" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Login</button>
+        </form>
+      </div>
     </div>
   );
 }
