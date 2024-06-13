@@ -14,12 +14,6 @@ const Card = ({ imageSrc, title, content, buttonText }) => (
         <p className="mt-2.5 mr-6 text-base leading-6 text-neutral-600 max-md:mr-2.5">
           {content}
         </p>
-        <button
-          className="flex flex-col justify-center mt-5 text-lg leading-6 text-center text-white bg-emerald-500 rounded-lg px-16 py-2.5 max-md:pr-8 max-md:pl-5"
-          type="button"
-        >
-          {buttonText}
-        </button>
       </div>
     </article>
   </div>
@@ -31,29 +25,29 @@ function MyComponent() {
       imageSrc: "https://cdn.builder.io/api/v1/image/assets/TEMP/a06c082c59fa60cb89d1afc189f506c61747fda1b891f13806b07d8a93dcc62b?apiKey=7efa433487f5452dbfc26a66cc5d9d42&",
       title: "Discovery Ancol",
       content:
-        "Some quick example text to build on the card title and make up the bulk of the card's content. make up the bulk of the card's content.",
-      buttonText: "Button Sample"
+        "Welcome to Discovery Ancol, a luxurious 4-star hotel located in the vibrant city of Jakarta, Indonesia. With its prime location and impeccable service, this hotel offers a truly unforgettable experience for both business and leisure travelers.",
+      
     },
     {
       imageSrc: "https://cdn.builder.io/api/v1/image/assets/TEMP/1e88c2b10df00940b9703fe6948dbdf0b320700f55022d77b7a218b4940da2d7?apiKey=7efa433487f5452dbfc26a66cc5d9d42&",
       title: "Putri Duyung Ancol",
       content:
-        "Some quick example text to build on the card title and make up the bulk of the card's content. make up the bulk of the card's content.",
-      buttonText: "Button Sample"
+        "Welcome to Putri Duyung Ancol, a charming 3-star hotel nestled in the vibrant city of Jakarta, Indonesia. With its convenient location just 10 kilometers from the city center, this hotel offers a peaceful retreat away from the hustle and bustle.",
+      
     },
     {
       imageSrc: "https://cdn.builder.io/api/v1/image/assets/TEMP/e9a8e9ed19639765a9cd996f92dd331d18c45e66ebe167e914fb666cbec9618d?apiKey=7efa433487f5452dbfc26a66cc5d9d42&",
-      title: "Discovery Ancol",
+      title: "Mercure Convention Center Ancol Jakarta",
       content:
-        "Some quick example text to build on the card title and make up the bulk of the card's content. make up the bulk of the card's content.",
-      buttonText: "Button Sample"
+        "Welcome to Mercure Convention Center Ancol Jakarta, a 4-star hotel located in the vibrant city of Jakarta, Indonesia. With its prime location, luxurious amenities, and excellent service, this hotel offers a perfect blend of comfort travelers.",
+      
     },
     {
       imageSrc: "https://cdn.builder.io/api/v1/image/assets/TEMP/77c57af02ca4afa08b58fd425ec432b78d8871d0328198caf620995746e936ba?apiKey=7efa433487f5452dbfc26a66cc5d9d42&",
-      title: "Discovery Ancol",
+      title: "BI Executive Hotel",
       content:
-        "Some quick example text to build on the card title and make up the bulk of the card's content. make up the bulk of the card's content.",
-      buttonText: "Button Sample"
+        "BI Executive Hotel is a hotel near null airport and is the right choice to stay overnight while waiting for the next flight schedule. Get a comfortable place to rest in the middle of your temporary stopover, For those of you who want pocket-friendly prices.",
+      
     }
   ];
 
@@ -75,7 +69,6 @@ function MyComponent() {
                 imageSrc={card.imageSrc}
                 title={card.title}
                 content={card.content}
-                buttonText={card.buttonText}
               />
             ))}
           </div>
