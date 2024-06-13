@@ -103,58 +103,6 @@ export default function DashboardWisatawanlistContent() {
                     </article>
                 </div>
             </section>
-            <section className="self-center mt-4 w-full max-w-[1350px] max-md:max-w-full">
-                <div className="flex gap-10 max-md:flex-col max-md:gap-0">
-                <article className="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
-                        <Cardconten 
-                            imageSrc="https://cdn.builder.io/api/v1/image/assets/TEMP/b3b9b244b5dd93ca15eebc78093d7859277c7673400daa5b5ac7e41606612c7e?apiKey=59541bf2346a4f44991d05930261be7f&"
-                            title="Bawaan Berpetualang: Panduan Pintar Membawa Perlengkapan Wisata"
-                            description="Daftar Perlengkapan Wisata Wajib Bawa. Jelajahi alam dengan lengkap dan nyaman dengan barang-barang penting ini."
-                            likes="20"
-                            views="9K"
-                            time="30 min ago"
-                            link="http://localhost:3000/Wisatawan/KontenPariwisata/isikonten"
-                        />
-                    </article>
-                    <article className="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
-                        <Cardconten 
-                            imageSrc="https://cdn.builder.io/api/v1/image/assets/TEMP/ae5c36bee0fd1a8e77b98c34bcdeba4f52321f706c90e69edce04f70bdd445c2?apiKey=59541bf2346a4f44991d05930261be7f&"
-                            title="BMenikmati Wisata dengan Lebih Banyak Kenangan: Tips dan Trik Berpetualang"
-                            description="Temukan cara cerdas untuk meraih pengalaman berwisata yang tak terlupakan dengan tips praktis ini. dari persiapan matang hingga trik nya."
-                            likes="3k"
-                            views="20K"
-                            time="35 min ago"
-                            link="http://localhost:3000/Wisatawan/KontenPariwisata/isikonten"
-                        />
-                    </article>
-                </div>
-            </section>
-            <section className="self-center mt-4 w-full max-w-[1350px] max-md:max-w-full">
-                <div className="flex gap-10 max-md:flex-col max-md:gap-0">
-                <article className="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
-                        <Cardconten 
-                            imageSrc="https://cdn.builder.io/api/v1/image/assets/TEMP/b3b9b244b5dd93ca15eebc78093d7859277c7673400daa5b5ac7e41606612c7e?apiKey=59541bf2346a4f44991d05930261be7f&"
-                            title="Bawaan Berpetualang: Panduan Pintar Membawa Perlengkapan Wisata"
-                            description="Daftar Perlengkapan Wisata Wajib Bawa. Jelajahi alam dengan lengkap dan nyaman dengan barang-barang penting ini."
-                            likes="20"
-                            views="9K"
-                            time="30 min ago"
-                            link="http://localhost:3000/Wisatawan/KontenPariwisata/isikonten"
-                        />
-                    </article>
-                    <article className="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
-                        <Cardconten 
-                            imageSrc="https://cdn.builder.io/api/v1/image/assets/TEMP/ae5c36bee0fd1a8e77b98c34bcdeba4f52321f706c90e69edce04f70bdd445c2?apiKey=59541bf2346a4f44991d05930261be7f&"
-                            title="BMenikmati Wisata dengan Lebih Banyak Kenangan: Tips dan Trik Berpetualang"
-                            description="Temukan cara cerdas untuk meraih pengalaman berwisata yang tak terlupakan dengan tips praktis ini. dari persiapan matang hingga trik nya."
-                            likes="3k"
-                            views="20K"
-                            time="35 min ago"
-                            link="http://localhost:3000/Wisatawan/KontenPariwisata/isikonten"
-                        />
-                    </article>
-                </div>
-            </section>
             {chunkedContents.map((chunk, index) => (
                 <section key={index} className="self-center mt-4 w-full max-w-[1350px] max-md:max-w-full">
                     <div className="flex gap-10 max-md:flex-col max-md:gap-0">
