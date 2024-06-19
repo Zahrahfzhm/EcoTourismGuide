@@ -23,11 +23,14 @@ export default function Header() {
                             About Us
                         </a>
                     </Link>
+<<<<<<< HEAD
                     <Link href="http://localhost:3000/" legacyBehavior>
                         <a className="hover:bg-[#1EC28B] hover:shadow-md hover:text-white text-black px-4 py-2 rounded-lg transition-colors duration-300 ease-in-out">
                             Akun
                         </a>
                     </Link>
+=======
+>>>>>>> 41427b26d0bc3f5dcb7a2aae2f865584f1392c82
                 </div>
             </div>
         </nav>
