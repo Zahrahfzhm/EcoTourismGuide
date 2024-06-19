@@ -11,8 +11,8 @@ export default function Footer() {
                 <div className="w-1/8 mr-20">
                     <h2 className="text-lg font-semibold mb-1 h-8">Company</h2>
                     <ul>
-                        <li><a href="#" className="hover:text-gray-300">About us</a></li>
-                        <li><a href="#" className="hover:text-gray-300">Contact us</a></li>
+                        <li><a href="http://localhost:3000/Wisatawan/AboutUS" className="hover:text-gray-300">About us</a></li>
+                        <li><a href="http://localhost:3000/Wisatawan/ContactUS" className="hover:text-gray-300">Contact us</a></li>
                         <li><a href="#" className="hover:text-gray-300">FAQs</a></li>
                         <li><a href="#" className="hover:text-gray-300">Search</a></li>
                     </ul>

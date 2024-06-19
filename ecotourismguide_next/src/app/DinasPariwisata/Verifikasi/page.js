@@ -1,7 +1,7 @@
-import MonitorVerifikasi from "@/components/Content/VerifikasiRegistrasi/monitor";
+import VerifikasiUMKM from "@/components/Content/VerifikasiRegistrasi";
 
 export default function Verifikasi(){
     return( 
-        <MonitorVerifikasi/>
+        <VerifikasiUMKM />
     );
 }
